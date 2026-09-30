@@ -14,6 +14,7 @@ Personal reading list across three tracks. Each track lives in its own file unde
 
 | | Title | Author | Track |
 |---|---|---|---|
+| [ ] | The C Programming Language (2nd ed.) | Brian Kernighan, Dennis Ritchie | [quant](tracks/quant.md) |
 | [~] | A Tour of C++ | Bjarne Stroustrup | [quant](tracks/quant.md) |
 | [ ] | Designing Data-Intensive Applications (2nd ed.) | Martin Kleppmann, Chris Riccomini | [career](tracks/career.md) |
 | [~] | A Practical Guide to Quantitative Finance Interviews | Xinfeng Zhou | [quant](tracks/quant.md) |
@@ -24,7 +25,6 @@ Personal reading list across three tracks. Each track lives in its own file unde
 |---|---|---|---|
 | [ ] | Competitive Programmer's Handbook (draft, Aug 2019) | Antti Laaksonen | [putnam-cp](tracks/putnam-cp.md) |
 | [ ] | Putnam Guide | R. Ebrahimian (UMD) | [putnam-cp](tracks/putnam-cp.md) |
-| [ ] | The C Programming Language (2nd ed.) | Brian Kernighan, Dennis Ritchie | [quant](tracks/quant.md) |
 | [ ] | An Introduction to Statistical Learning with Applications in Python | James, Witten, Hastie, Tibshirani, Taylor | [quant](tracks/quant.md) |
 
 ### Tier 3

@@ -2,22 +2,23 @@
 
 ## Reading
 
+- [ ] **The C Programming Language, 2nd edition** by Brian Kernighan and Dennis Ritchie (Tier 1)
+  Added 2026-09-29 after losing an Optiver interview on a question about this. Moved to Tier 1 and to the front of the
+  queue on 2026-09-29 on my dad's advice: read K&R before A Tour of C++. The lesson: an array's O(n) insertion is a
+  memmove over contiguous memory that runs at many GB/s. For a few hundred elements it is often faster than a skip list's
+  pointer chasing, allocations, and random-level logic. Big-O hides constant factors and cache behavior. Read K&R for the
+  memory model, pointers, and arrays; the cache-locality half of the lesson belongs to the low-latency book in the career track.
 - [~] **A Tour of C++** by Bjarne Stroustrup (Tier 1)
-  Fast, authoritative overview of modern C++. First priority overall. Also pays off directly in competitive programming.
+  Fast, authoritative overview of modern C++. Second priority overall, after K&R. Also pays off directly in competitive programming.
   Plan (started 2026-09-28): one pass, no re-reading. Chapters 1 to 8 (core language) at one chapter per sitting with a
   small program each. Chapters 9 onward (standard library) at two chapters per sitting, skim, and solve one Codeforces
   problem using that chapter's library feature. Done means every chapter read once, not mastered. Keep as a reference after.
-  Log: 2026-09-28 pages 1 to 3. Currently on page 4, chapter 1.
+  Log: 2026-09-28 pages 1 to 3. 2026-09-29 page 4. Currently on page 5, section 1.4.
 - [~] **A Practical Guide to Quantitative Finance Interviews** by Xinfeng Zhou (Tier 1)
   Status (2026-09-28): ch 2 brainteasers mostly done, ch 4 probability a lot done. Not started: ch 3 calculus and linear
   algebra, ch 5 stochastic processes, ch 6 finance, ch 7 algorithms and numerical methods.
   Plan: one problem a day from the unread chapters, alongside the C++ book. Order: finish ch 4, then 3, 7, 5, 6.
   Brainteasers, probability, stochastic calculus basics, and finance questions in the form they show up in quant interviews.
-- [ ] **The C Programming Language, 2nd edition** by Brian Kernighan and Dennis Ritchie (Tier 2)
-  Added 2026-09-29 after losing an Optiver interview on a question about this. The lesson: an array's O(n) insertion is a
-  memmove over contiguous memory that runs at many GB/s. For a few hundred elements it is often faster than a skip list's
-  pointer chasing, allocations, and random-level logic. Big-O hides constant factors and cache behavior. Read K&R for the
-  memory model, pointers, and arrays; the cache-locality half of the lesson belongs to the low-latency book in the career track.
 - [ ] **An Introduction to Statistical Learning with Applications in Python** by Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor (Tier 2)
   Applied stats and ML foundations for quant research: regression, classification, resampling, tree methods, unsupervised learning.
 
