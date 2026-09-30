@@ -2,12 +2,13 @@
 
 ## Reading
 
-- [ ] **The C Programming Language, 2nd edition** by Brian Kernighan and Dennis Ritchie (Tier 1)
+- [~] **The C Programming Language, 2nd edition** by Brian Kernighan and Dennis Ritchie (Tier 1)
   Added 2026-09-29 after losing an Optiver interview on a question about this. Moved to Tier 1 and to the front of the
   queue on 2026-09-29 on my dad's advice: read K&R before A Tour of C++. The lesson: an array's O(n) insertion is a
   memmove over contiguous memory that runs at many GB/s. For a few hundred elements it is often faster than a skip list's
   pointer chasing, allocations, and random-level logic. Big-O hides constant factors and cache behavior. Read K&R for the
   memory model, pointers, and arrays; the cache-locality half of the lesson belongs to the low-latency book in the career track.
+  Log: 2026-09-29 started, read to page 13. Currently on page 13, chapter 1.
 - [~] **A Tour of C++** by Bjarne Stroustrup (Tier 1)
   Fast, authoritative overview of modern C++. Second priority overall, after K&R. Also pays off directly in competitive programming.
   Plan (started 2026-09-28): one pass, no re-reading. Chapters 1 to 8 (core language) at one chapter per sitting with a
