@@ -1,6 +1,6 @@
 # Green book problem checklist
 
-Problem names from *A Practical Guide to Quantitative Finance Interviews* (Xinfeng Zhou), chapters 2 and 4.
+Problem names from *A Practical Guide to Quantitative Finance Interviews* (Xinfeng Zhou), chapters 2, 3 and 4.
 `[x]` = can solve from memory, `[~]` = know the idea but shaky, `[ ]` = not yet. Other chapters get added as they're started.
 
 ## Chapter 2: Brain Teasers
@@ -59,6 +59,17 @@ Problem names from *A Practical Guide to Quantitative Finance Interviews* (Xinfe
 ### 2.9 Proof by contradiction
 - [x] Irrational number
 - [ ] Rainbow hats
+
+## Chapter 3: Calculus and Linear Algebra
+
+Started 2026-10-01. Problems in this chapter are less named than in ch 2 and 4; add them under their section as they're done.
+
+### 3.1 Limits and derivatives
+### 3.2 Integration
+### 3.3 Partial derivatives and multiple integrals
+### 3.4 Important calculus methods (Taylor series, Newton's method, Lagrange multipliers)
+### 3.5 Ordinary differential equations
+### 3.6 Linear algebra
 
 ## Chapter 4: Probability Theory
 
