@@ -63,30 +63,30 @@ Problem names from *A Practical Guide to Quantitative Finance Interviews* (Xinfe
 ## Chapter 4: Probability Theory
 
 ### 4.1 Basic probability definitions and set operations
-- [ ] Coin toss game
+- [x] Coin toss game
 - [ ] Card game
-- [ ] Drunk passenger
-- [ ] N points on a circle
+- [x] Drunk passenger
+- [x] N points on a circle
 
 ### 4.2 Combinatorial analysis
 - [ ] Poker hands
-- [ ] Hopping rabbit
+- [x] Hopping rabbit
 - [ ] Screwy pirates 2
 - [ ] Chess tournament
 - [ ] Application letters
-- [ ] Birthday problem
+- [x] Birthday problem
 - [ ] 100th digit
 - [ ] Cubic of integer
 
 ### 4.3 Conditional probability and Bayes' formula
 - [ ] Boys and girls
 - [ ] All-girl world?
-- [ ] Unfair coin
-- [ ] Fair probability from an unfair coin
+- [x] Unfair coin
+- [x] Fair probability from an unfair coin
 - [ ] Dart game
 - [ ] Birthday line
 - [ ] Dice order
-- [ ] Monty Hall problem
+- [x] Monty Hall problem
 - [ ] Amoeba population
 - [ ] Candies in a jar
 - [ ] Coin toss game
@@ -94,7 +94,7 @@ Problem names from *A Practical Guide to Quantitative Finance Interviews* (Xinfe
 - [ ] Aces
 
 ### 4.4 Discrete and continuous distributions
-- [ ] Meeting probability
+- [x] Meeting probability
 - [ ] Probability of triangle
 - [ ] Property of Poisson process
 - [ ] Moments of normal distribution
@@ -102,7 +102,7 @@ Problem names from *A Practical Guide to Quantitative Finance Interviews* (Xinfe
 ### 4.5 Expected value, variance and covariance
 - [ ] Connecting noodles
 - [ ] Optimal hedge ratio
-- [ ] Dice game
+- [x] Dice game
 - [ ] Card game
 - [ ] Sum of random variables
 - [ ] Coupon collection
@@ -111,4 +111,4 @@ Problem names from *A Practical Guide to Quantitative Finance Interviews* (Xinfe
 ### 4.6 Order statistics
 - [ ] Expected value of max and min
 - [ ] Correlation of max and min
-- [ ] Random ants
+- [x] Random ants
