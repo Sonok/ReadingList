@@ -65,6 +65,8 @@ Problem names from *A Practical Guide to Quantitative Finance Interviews* (Xinfe
 Started 2026-10-01. Problems in this chapter are less named than in ch 2 and 4; add them under their section as they're done.
 
 ### 3.1 Limits and derivatives
+Section finished 2026-10-03.
+- [x] Derivative of ln x^(ln x)
 ### 3.2 Integration
 ### 3.3 Partial derivatives and multiple integrals
 ### 3.4 Important calculus methods (Taylor series, Newton's method, Lagrange multipliers)

@@ -9,6 +9,10 @@
   array-vs-skip-list question directly: caches, locality, and why contiguous memory wins. Also covers machine-level code,
   linking, virtual memory, and concurrency. Relevant to quant dev as much as general career. Start with ch 6 if short on time.
 
+## Interview prep
+
+- Bloomberg interview on 2026-10-08. Reading across all tracks is light until then.
+
 ## Done
 
 _(none yet)_

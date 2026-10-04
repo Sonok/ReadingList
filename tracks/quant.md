@@ -21,6 +21,8 @@
   Plan: one problem a day, alongside the C book. Goal is getting through the whole book, not clearing every problem in a
   chapter before moving on. Order: ch 3 (started 2026-10-01), then 7, 5, 6; circle back to ch 2 and 4 leftovers after.
   Per-problem status lives in [greenbook-checklist.md](greenbook-checklist.md). As of 2026-10-01: ch 2 17/37, ch 4 11/40.
+  2026-10-03: finished ch 3 section 3.1 (limits and derivatives). Reading is light until the Bloomberg interview
+  on 2026-10-08 (see [career.md](career.md)).
   Brainteasers, probability, stochastic calculus basics, and finance questions in the form they show up in quant interviews.
 - [ ] **An Introduction to Statistical Learning with Applications in Python** by Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor (Tier 2)
   Applied stats and ML foundations for quant research: regression, classification, resampling, tree methods, unsupervised learning.
