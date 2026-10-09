@@ -8,8 +8,8 @@
   memmove over contiguous memory that runs at many GB/s. For a few hundred elements it is often faster than a skip list's
   pointer chasing, allocations, and random-level logic. Big-O hides constant factors and cache behavior. Read K&R for the
   memory model, pointers, and arrays; the cache-locality half of the lesson belongs to the low-latency book in the career track.
-  Log: 2026-09-29 started, read to page 13. 2026-09-30 to page 18. 2026-10-06 to page 28. Currently on page 28 of 264 (11%),
-  section 1.9 Character Arrays.
+  Log: 2026-09-29 started, read to page 13. 2026-09-30 to page 18. 2026-10-06 to page 28. 2026-10-09 to page 32, finished 1.9. Currently on page 32 of 264 (12%),
+  section 1.10 External Variables and Scope.
 - [~] **A Tour of C++** by Bjarne Stroustrup (Tier 1)
   Fast, authoritative overview of modern C++. Second priority overall, after K&R. Also pays off directly in competitive programming.
   Plan (started 2026-09-28): one pass, no re-reading. Chapters 1 to 8 (core language) at one chapter per sitting with a
