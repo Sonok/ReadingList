@@ -8,6 +8,21 @@ Personal reading list across three tracks. Each track lives in its own file unde
 | Putnam & competitive programming | [tracks/putnam-cp.md](tracks/putnam-cp.md) |
 | Quant dev / quant research | [tracks/quant.md](tracks/quant.md) |
 
+## Progress
+
+![Progress chart: percent complete over time for each book in progress](progress.png)
+
+<!-- progress:start -->
+| Book | Progress | | Unit |
+|---|---|---|---|
+| K&R | `███░░░░░░░░░░░░░░░░░` | 14% | 36 of 264 pages |
+| A Tour of C++ | `░░░░░░░░░░░░░░░░░░░░` | 1% | 4 of 320 pages |
+| Green book | `████████░░░░░░░░░░░░` | 38% | 29 of 77 problems |
+| DDIA | `█░░░░░░░░░░░░░░░░░░░` | 6% | 38 of 600 pages |
+<!-- progress:end -->
+
+Data lives in [progress.csv](progress.csv). After logging, run `python3 scripts/plot_progress.py` to redraw the chart and this table.
+
 ## Priority order
 
 ### Tier 1
