@@ -8,8 +8,9 @@
   memmove over contiguous memory that runs at many GB/s. For a few hundred elements it is often faster than a skip list's
   pointer chasing, allocations, and random-level logic. Big-O hides constant factors and cache behavior. Read K&R for the
   memory model, pointers, and arrays; the cache-locality half of the lesson belongs to the low-latency book in the career track.
-  Log: 2026-09-29 started, read to page 13. 2026-09-30 to page 18. 2026-10-06 to page 28. 2026-10-09 to page 36, finished chapter 1. 2026-10-11 to page 41, finished 2.7. Currently on page 41 of 264 (16%),
-  section 2.8 Increment and Decrement Operators.
+  Log: 2026-09-29 started, read to page 13. 2026-09-30 to page 18. 2026-10-06 to page 28. 2026-10-09 to page 36, finished chapter 1. 2026-10-11 to page 41 (through 2.6), then skipped ahead and read 2.9 Bitwise Operators and 2.10 Assignment
+  Operators. Currently on page 51 of 264, section 2.11 Conditional Expressions. 45 pages read (17%).
+  TODO: backfill 2.7 Type Conversions and 2.8 Increment and Decrement (pages 42 to 47), not yet read.
 - [~] **A Tour of C++** by Bjarne Stroustrup (Tier 1)
   Fast, authoritative overview of modern C++. Second priority overall, after K&R. Also pays off directly in competitive programming.
   Plan (started 2026-09-28): one pass, no re-reading. Chapters 1 to 8 (core language) at one chapter per sitting with a

@@ -15,7 +15,7 @@ Personal reading list across three tracks. Each track lives in its own file unde
 <!-- progress:start -->
 | Book | Progress | | Unit |
 |---|---|---|---|
-| K&R | `███░░░░░░░░░░░░░░░░░` | 16% | 41 of 264 pages |
+| K&R | `███░░░░░░░░░░░░░░░░░` | 17% | 45 of 264 pages |
 | A Tour of C++ | `░░░░░░░░░░░░░░░░░░░░` | 2% | 4 of 226 pages |
 | Green book | `███░░░░░░░░░░░░░░░░░` | 16% | 30 of 191 pages |
 | DDIA | `█░░░░░░░░░░░░░░░░░░░` | 6% | 38 of 600 pages |
