@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """Render progress.png and the README progress table from progress.csv.
 
-progress.csv rows: date,book,done,total. Units are pages, except the green book,
-which counts problems checked off in tracks/greenbook-checklist.md.
+progress.csv rows: date,book,done,total. Units are pages. The green book baseline (30 of 191 as of 2026-10-03) is an
+estimate from problems done in ch 2 and 4 plus ch 1 and 3.1; forward progress is logged by page.
 Run after appending a row:  python3 scripts/plot_progress.py
 """
 import csv
@@ -23,7 +23,7 @@ CSV, PNG, README = ROOT / "progress.csv", ROOT / "progress.png", ROOT / "README.
 BOOKS = [
     ("K&R", "#2a78d6", "pages"),
     ("A Tour of C++", "#eb6834", "pages"),
-    ("Green book", "#1baf7a", "problems"),
+    ("Green book", "#1baf7a", "pages"),
     ("DDIA", "#eda100", "pages"),
 ]
 TEXT, TEXT2, GRID = "#1f1f1e", "#5f5e58", "#e6e5e0"
