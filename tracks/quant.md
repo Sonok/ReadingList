@@ -9,7 +9,7 @@
   pointer chasing, allocations, and random-level logic. Big-O hides constant factors and cache behavior. Read K&R for the
   memory model, pointers, and arrays; the cache-locality half of the lesson belongs to the low-latency book in the career track.
   Log: 2026-09-29 started, read to page 13. 2026-09-30 to page 18. 2026-10-06 to page 28. 2026-10-09 to page 36, finished chapter 1. 2026-10-11 to page 41 (through 2.6), then read 2.8 through 2.12 with 2.7 skipped. Chapter 2 done except 2.7. Currently on page 52
-  of 264, chapter 3 Control Flow next. 48 pages read (18%).
+  of 238, chapter 3 Control Flow next. 48 pages read (18%).
   TODO: backfill 2.7 Type Conversions (pages 41 to 44), not yet read.
 - [~] **A Tour of C++** by Bjarne Stroustrup (Tier 1)
   Fast, authoritative overview of modern C++. Second priority overall, after K&R. Also pays off directly in competitive programming.
