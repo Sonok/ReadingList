@@ -32,8 +32,13 @@ series = defaultdict(list)
 with CSV.open() as f:
     for row in csv.DictReader(f):
         series[row["book"]].append((date.fromisoformat(row["date"]), int(row["done"]), int(row["total"])))
-for v in series.values():
-    v.sort()
+for k, v in series.items():
+    # One point per day: keep the highest value logged that day.
+    byday = {}
+    for d, done, total in v:
+        if d not in byday or done > byday[d][0]:
+            byday[d] = (done, total)
+    series[k] = sorted((d, done, total) for d, (done, total) in byday.items())
 
 today = date.today()
 ends = []  # (y, label, color) for end labels, placed after the axes are scaled
