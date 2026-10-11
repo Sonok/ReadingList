@@ -54,19 +54,19 @@ for name, color, _ in BOOKS:
 top = max(100 * p[-1][1] / p[-1][2] for p in series.values())
 ax.set_ylim(0, min(100, (int(top // 10) + 2) * 10))  # headroom above the leader; grows toward 100 as books finish
 # End labels: sort by value, push apart to a minimum gap, and connect displaced ones to the line end with a leader.
-from datetime import timedelta
 ymax = ax.get_ylim()[1]
 gap = ymax * 0.07
 ends.sort()
 placed = []
 for y, _, _ in ends:
     placed.append(y if not placed else max(y, placed[-1] + gap))
-x0, x1 = ax.get_xlim()
-dx = timedelta(days=(x1 - x0) * 0.045)
+x0, x1 = ax.get_xlim()  # matplotlib date numbers (float days)
+xt = mdates.date2num(today)
+dx = (x1 - x0) * 0.045
 for (y, label, color), ly in zip(ends, placed):
     if abs(ly - y) > 1e-9:
-        ax.plot([today, today + dx], [y, ly], color=color, lw=1, clip_on=False, solid_capstyle="round")
-    ax.text(today + dx * 1.15, ly, label, va="center", fontsize=9, color=TEXT, clip_on=False)
+        ax.plot([xt, xt + dx], [y, ly], color=color, lw=1, clip_on=False, solid_capstyle="round")
+    ax.text(xt + dx * 1.15, ly, label, va="center", fontsize=9, color=TEXT, clip_on=False)
 ax.set_xlim(x0, x1)
 ax.set_ylabel("% complete", color=TEXT2, fontsize=9)
 ax.yaxis.set_major_formatter(lambda v, _: f"{v:.0f}%")
