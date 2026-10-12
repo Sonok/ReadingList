@@ -17,7 +17,6 @@ Personal reading list across three tracks. Each track lives in its own file unde
 |---|---|---|---|
 | K&R | `████░░░░░░░░░░░░░░░░` | 20% | 48 of 238 pages |
 | A Tour of C++ | `░░░░░░░░░░░░░░░░░░░░` | 2% | 4 of 226 pages |
-| Green book | `███░░░░░░░░░░░░░░░░░` | 16% | 30 of 191 pages |
 | DDIA | `█░░░░░░░░░░░░░░░░░░░` | 6% | 38 of 600 pages |
 <!-- progress:end -->
 
@@ -31,7 +30,6 @@ Data lives in [progress.csv](progress.csv). After logging, run `python3 scripts/
 |---|---|---|---|
 | [~] | The C Programming Language (2nd ed.) | Brian Kernighan, Dennis Ritchie | [quant](tracks/quant.md) |
 | [~] | A Tour of C++ | Bjarne Stroustrup | [quant](tracks/quant.md) |
-| [~] | A Practical Guide to Quantitative Finance Interviews | Xinfeng Zhou | [quant](tracks/quant.md) |
 | [ ] | Competitive Programmer's Handbook (draft, Aug 2019) | Antti Laaksonen | [putnam-cp](tracks/putnam-cp.md) |
 | [ ] | Putnam Guide | R. Ebrahimian (UMD) | [putnam-cp](tracks/putnam-cp.md) |
 
@@ -39,6 +37,7 @@ Data lives in [progress.csv](progress.csv). After logging, run `python3 scripts/
 
 | | Title | Author | Track |
 |---|---|---|---|
+| [~] | A Practical Guide to Quantitative Finance Interviews | Xinfeng Zhou | [quant](tracks/quant.md) |
 | [~] | Designing Data-Intensive Applications (2nd ed.) | Martin Kleppmann, Chris Riccomini | [career](tracks/career.md) |
 | [ ] | An Introduction to Statistical Learning with Applications in Python | James, Witten, Hastie, Tibshirani, Taylor | [quant](tracks/quant.md) |
 

@@ -17,10 +17,12 @@
   small program each. Chapters 9 onward (standard library) at two chapters per sitting, skim, and solve one Codeforces
   problem using that chapter's library feature. Done means every chapter read once, not mastered. Keep as a reference after.
   Log: 2026-09-28 pages 1 to 3. 2026-09-29 page 4. Currently on page 5, section 1.4.
-- [~] **A Practical Guide to Quantitative Finance Interviews** by Xinfeng Zhou (Tier 1)
+- [~] **A Practical Guide to Quantitative Finance Interviews** by Xinfeng Zhou (Tier 2)
   Status (2026-09-28): ch 2 brainteasers mostly done, ch 4 probability a lot done. Not started: ch 3 calculus and linear
   algebra, ch 5 stochastic processes, ch 6 finance, ch 7 algorithms and numerical methods.
-  Plan: one problem a day, alongside the C book. Goal is getting through the whole book, not clearing every problem in a
+  2026-10-11: dropped to Tier 2 since the QT recruiting cycle has passed; Putnam Guide takes its slot. New approach is
+  sampling sections as needed rather than problem by problem, so page progress is no longer tracked for this book.
+  Earlier plan: one problem a day, alongside the C book. Goal is getting through the whole book, not clearing every problem in a
   chapter before moving on. Order: ch 3 (started 2026-10-01), then 7, 5, 6; circle back to ch 2 and 4 leftovers after.
   Per-problem status lives in [greenbook-checklist.md](greenbook-checklist.md). As of 2026-10-01: ch 2 17/37, ch 4 11/40.
   2026-10-03: finished ch 3 section 3.1 (limits and derivatives).
