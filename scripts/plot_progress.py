@@ -20,11 +20,12 @@ ROOT = Path(__file__).resolve().parent.parent
 CSV, PNG, README = ROOT / "progress.csv", ROOT / "progress.png", ROOT / "README.md"
 
 # Fixed categorical order and hue per book; never reassigned when a book is added or finished.
-# Green book (#1baf7a) was removed 2026-10-11; reuse that hue if it comes back.
+# Green book (#1baf7a) was removed 2026-10-11; its hue went to Putnam Guide.
 BOOKS = [
     ("K&R", "#2a78d6", "pages"),
     ("A Tour of C++", "#eb6834", "pages"),
     ("DDIA", "#eda100", "pages"),
+    ("Putnam Guide", "#1baf7a", "pages"),
 ]
 TEXT, TEXT2, GRID = "#1f1f1e", "#5f5e58", "#e6e5e0"
 
