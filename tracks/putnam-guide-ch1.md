@@ -3,7 +3,8 @@
 R. Ebrahimian, UMD. Printed pages 9 to 28. Goal (set 2026-10-11): every exercise in the chapter, written up to the Putnam
 repo's rubric standard. Theorems and examples are read-and-understand; exercises are the work.
 
-Counts: 1 definition, 5 theorems, 13 worked examples, 52 exercises.
+Counts: 1 definition, 5 theorems, 13 worked examples, 1 strategies section, 52 exercises. 72 items; the chart counts
+  checked boxes in this file.
 
 ## 1.1 Basics and 1.2 Important Theorems (read)
 

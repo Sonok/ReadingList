@@ -11,8 +11,9 @@
   Moved to Tier 1 on 2026-10-09: a Putnam score is the other resume signal. Target exam is Putnam 2027 (Dec 4, 2027);
   user is on a gap year in 2026-27, so Putnam 2026 is at most a dress rehearsal. Daily training lives in the separate Putnam repo.
   Plan (2026-10-11): chapter 1, Communication Tools (pages 9 to 28), all 52 exercises. Per-item checklist in
-  [putnam-guide-ch1.md](putnam-guide-ch1.md). Chart tracks pages read of 230 (PDF); chapter 1 is 20 of them.
-  Log: 2026-10-11 started, page 9.
+  [putnam-guide-ch1.md](putnam-guide-ch1.md). Chart tracks chapter 1 as its own book: 72 items (1 definition, 5 theorems, 13 examples, the strategies section,
+  52 exercises), each checked off in the checklist. Later chapters get their own entry when started.
+  Log: 2026-10-11 started, 0 of 72.
 
 ## Done
 

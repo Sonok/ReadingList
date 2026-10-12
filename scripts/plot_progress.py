@@ -25,7 +25,7 @@ BOOKS = [
     ("K&R", "#2a78d6", "pages"),
     ("A Tour of C++", "#eb6834", "pages"),
     ("DDIA", "#eda100", "pages"),
-    ("Putnam Guide", "#1baf7a", "pages"),
+    ("Putnam Guide ch 1", "#1baf7a", "items"),  # 1 definition + 5 theorems + 13 examples + 1 strategies section + 52 exercises
 ]
 TEXT, TEXT2, GRID = "#1f1f1e", "#5f5e58", "#e6e5e0"
 

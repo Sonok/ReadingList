@@ -18,7 +18,7 @@ Personal reading list across three tracks. Each track lives in its own file unde
 | K&R | `████░░░░░░░░░░░░░░░░` | 20% | 48 of 238 pages |
 | A Tour of C++ | `░░░░░░░░░░░░░░░░░░░░` | 2% | 4 of 226 pages |
 | DDIA | `█░░░░░░░░░░░░░░░░░░░` | 6% | 38 of 600 pages |
-| Putnam Guide | `░░░░░░░░░░░░░░░░░░░░` | 0% | 0 of 230 pages |
+| Putnam Guide ch 1 | `░░░░░░░░░░░░░░░░░░░░` | 0% | 0 of 72 items |
 <!-- progress:end -->
 
 Data lives in [progress.csv](progress.csv). After logging, run `python3 scripts/plot_progress.py` to redraw the chart and this table.
