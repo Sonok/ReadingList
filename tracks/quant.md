@@ -39,8 +39,10 @@
   Classic bank of quant interview questions. Overlaps with Zhou and Joshi, so skim for what's new.
 - [ ] **An Interview Primer for Quantitative Finance** by Dirk Bester (Tier 3)
   Shorter primer on the interview process and question types.
-- [ ] **The Theory of Poker** by David Sklansky (Tier 3)
+- [ ] **The Theory of Poker** by David Sklansky (Tier 2)
   Expected value, pot odds, and decision-making under uncertainty. Common background for trading-firm interviews.
+  Moved to Tier 2 on 2026-10-13: SIG QT interviews are built around poker-style decisions and SIG recommends this book.
+  Light reading, 172 pages. Read it as the weekly non-C item alongside Putnam, not instead of C or C++.
 
 ### Foundations (Tier 3)
 

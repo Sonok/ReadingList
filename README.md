@@ -42,6 +42,7 @@ Data lives in [progress.csv](progress.csv). After logging, run `python3 scripts/
 | [~] | A Practical Guide to Quantitative Finance Interviews | Xinfeng Zhou | [quant](tracks/quant.md) |
 | [~] | Designing Data-Intensive Applications (2nd ed.) | Martin Kleppmann, Chris Riccomini | [career](tracks/career.md) |
 | [ ] | An Introduction to Statistical Learning with Applications in Python | James, Witten, Hastie, Tibshirani, Taylor | [quant](tracks/quant.md) |
+| [ ] | The Theory of Poker | David Sklansky | [quant](tracks/quant.md) |
 
 ### Tier 3
 
@@ -57,7 +58,6 @@ Not a priority until the Tier 1 books are done.
 | [ ] | Paul Wilmott on Quantitative Finance | Paul Wilmott | [quant](tracks/quant.md) |
 | [ ] | Trading and Exchanges: Market Microstructure for Practitioners | Larry Harris | [quant](tracks/quant.md) |
 | [ ] | Introduction to C++ for Financial Engineers: An Object-Oriented Approach | Daniel J. Duffy | [quant](tracks/quant.md) |
-| [ ] | The Theory of Poker | David Sklansky | [quant](tracks/quant.md) |
 | [ ] | Computer Systems: A Programmer's Perspective (3rd ed.) | Randal Bryant, David O'Hallaron | [career](tracks/career.md) |
 
 ## Conventions
