@@ -17,6 +17,7 @@ Personal reading list across three tracks. Each track lives in its own file unde
 |---|---|---|---|
 | K&R | `█████░░░░░░░░░░░░░░░` | 26% | 61 of 238 pages |
 | A Tour of C++ | `░░░░░░░░░░░░░░░░░░░░` | 2% | 4 of 226 pages |
+| CP Handbook | `░░░░░░░░░░░░░░░░░░░░` | 0% | 0 of 266 pages |
 | DDIA | `█░░░░░░░░░░░░░░░░░░░` | 6% | 38 of 600 pages |
 | Putnam Guide ch 1 | `░░░░░░░░░░░░░░░░░░░░` | 0% | 0 of 72 items |
 <!-- progress:end -->
@@ -31,7 +32,7 @@ Data lives in [progress.csv](progress.csv). After logging, run `python3 scripts/
 |---|---|---|---|
 | [~] | The C Programming Language (2nd ed.) | Brian Kernighan, Dennis Ritchie | [quant](tracks/quant.md) |
 | [~] | A Tour of C++ | Bjarne Stroustrup | [quant](tracks/quant.md) |
-| [ ] | Competitive Programmer's Handbook (draft, Aug 2019) | Antti Laaksonen | [putnam-cp](tracks/putnam-cp.md) |
+| [~] | Competitive Programmer's Handbook (draft, Aug 2019) | Antti Laaksonen | [putnam-cp](tracks/putnam-cp.md) |
 | [~] | Putnam Guide | R. Ebrahimian (UMD) | [putnam-cp](tracks/putnam-cp.md) |
 
 ### Tier 2

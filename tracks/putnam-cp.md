@@ -2,8 +2,11 @@
 
 ## Reading
 
-- [ ] **Competitive Programmer's Handbook** by Antti Laaksonen, draft of August 19, 2019 (Tier 1)
+- [~] **Competitive Programmer's Handbook** by Antti Laaksonen, draft of August 19, 2019 (Tier 1)
   Compact coverage of the standard CP toolkit: complexity, sorting, DP, graphs, number theory, geometry. Good fit for the 1000 to 1600 Codeforces range.
+  Plan: skip chapters 1 and 2 (pages 1 to 34, already known at 1100 Codeforces; Kadane's is the only thing there worth keeping).
+  Start at chapter 3 Sorting, page 35, and read to the end, page 300. Tracked in the chart as 266 pages.
+  Log: 2026-10-13 added, starting at page 35.
   Moved to Tier 1 on 2026-10-09: a listable Codeforces rating (1800+) is one of the two signals the summer 2028 tier-1
   internship resume needs. Target: 1800 by May 2027.
 - [~] **Putnam Guide** by R. Ebrahimian, University of Maryland, College Park (Tier 1)
