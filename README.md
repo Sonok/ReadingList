@@ -17,7 +17,7 @@ Personal reading list across three tracks. Each track lives in its own file unde
 |---|---|---|---|
 | K&R | `██████░░░░░░░░░░░░░░` | 28% | 66 of 238 pages |
 | A Tour of C++ | `░░░░░░░░░░░░░░░░░░░░` | 2% | 4 of 226 pages |
-| CP Handbook | `██░░░░░░░░░░░░░░░░░░` | 11% | 34 of 300 pages |
+| CP Handbook | `██░░░░░░░░░░░░░░░░░░` | 11% | 30 of 279 pages |
 | DDIA | `█░░░░░░░░░░░░░░░░░░░` | 6% | 38 of 600 pages |
 | Putnam Guide ch 1 | `░░░░░░░░░░░░░░░░░░░░` | 0% | 0 of 72 items |
 <!-- progress:end -->

@@ -24,7 +24,7 @@ CSV, PNG, README = ROOT / "progress.csv", ROOT / "progress.png", ROOT / "README.
 BOOKS = [
     ("K&R", "#2a78d6", "pages"),
     ("A Tour of C++", "#eb6834", "pages"),
-    ("CP Handbook", "#9a5bd9", "pages"),  # ch 1 and 2 (pages 1 to 34) skipped and counted as done
+    ("CP Handbook", "#9a5bd9", "pages"),  # 279-page copy; read from the start, baseline page 24 (corrected 2026-10-16)
     ("DDIA", "#eda100", "pages"),
     ("Putnam Guide ch 1", "#1baf7a", "items"),  # 1 definition + 5 theorems + 13 examples + 1 strategies section + 52 exercises
 ]
