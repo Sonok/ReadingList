@@ -26,7 +26,8 @@ BOOKS = [
     ("A Tour of C++", "#eb6834", "pages"),
     ("CP Handbook", "#9a5bd9", "pages"),  # 279-page copy; read from the start, baseline page 24 (corrected 2026-10-16)
     ("DDIA", "#eda100", "pages"),
-    ("Putnam Guide ch 1", "#1baf7a", "items"),  # 1 definition + 5 theorems + 13 examples + 1 strategies section + 52 exercises
+    ("Putnam Guide ch 1", "#1baf7a", "items"),
+    ("Quant Primer", "#d6336c", "pages"),  # Bester, An Interview Primer for Quantitative Finance, 92 pages  # 1 definition + 5 theorems + 13 examples + 1 strategies section + 52 exercises
 ]
 TEXT, TEXT2, GRID = "#1f1f1e", "#5f5e58", "#e6e5e0"
 
