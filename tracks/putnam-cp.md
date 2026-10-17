@@ -17,6 +17,10 @@
   [putnam-guide-ch1.md](putnam-guide-ch1.md). Chart tracks chapter 1 as its own book: 72 items (1 definition, 5 theorems, 13 examples, the strategies section,
   52 exercises), each checked off in the checklist. Later chapters get their own entry when started.
   Cadence (set 2026-10-12): one or two problems a week, timed and written up. K&R stays the daily book.
+  Done criterion for chapter 1 (set 2026-10-17): all definitions, theorems, and 13 examples worked, plus the exercises chosen
+  along the way. Not all 52 exercises. Quality reps matter more than coverage; the Putnam goal is top 500, so the target is
+  clean written solutions at the one-or-two-a-week cadence, not clearing the list. Chapter 1 target is end of 2026.
+  Later chapters are bits and pieces by topic, not cover to cover. This is the Putnam Guide's share of the six-book goal in the README.
   Log: 2026-10-11 started, 0 of 72.
 
 ## Done

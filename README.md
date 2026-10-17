@@ -31,7 +31,7 @@ Set 2026-10-17. Finish these six before the end of 2027:
 
 1. The C Programming Language (K&R)
 2. A Tour of C++
-3. Putnam Guide (chapter 1 by the end of 2026; later chapters selectively, not cover to cover)
+3. Putnam Guide (chapter 1 by the end of 2026, meaning all examples plus chosen exercises; later chapters selectively, not cover to cover)
 4. Designing Data-Intensive Applications
 5. Competitive Programmer's Handbook
 6. An Interview Primer for Quantitative Finance

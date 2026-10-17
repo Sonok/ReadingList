@@ -1,7 +1,8 @@
 # Putnam Guide, chapter 1: Communication Tools
 
-R. Ebrahimian, UMD. Printed pages 9 to 28. Goal (set 2026-10-11): every exercise in the chapter, written up to the Putnam
-repo's rubric standard. Theorems and examples are read-and-understand; exercises are the work.
+R. Ebrahimian, UMD. Printed pages 9 to 28. Goal (revised 2026-10-17): every definition, theorem, and example, plus the
+exercises chosen along the way, written up to the Putnam repo's rubric standard. Not all 52 exercises; good reps over
+coverage. Theorems and examples are read-and-understand; exercises are the work. Original goal (2026-10-11) was every exercise.
 
 Counts: 1 definition, 5 theorems, 13 worked examples, 1 strategies section, 52 exercises. 72 items; the chart counts
   checked boxes in this file.
