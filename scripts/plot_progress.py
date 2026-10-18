@@ -27,7 +27,7 @@ BOOKS = [
     ("CP Handbook", "#9a5bd9", "pages"),  # 279-page copy; read from the start, baseline page 24 (corrected 2026-10-16)
     ("DDIA", "#eda100", "pages"),
     ("Putnam Guide ch 1", "#1baf7a", "items"),  # 1 definition + 5 theorems + 13 examples + 1 strategies section + 52 exercises
-    ("Quant Primer", "#d6336c", "questions"),  # Bester, An Interview Primer for Quantitative Finance: 39 questions, the 41 numbered minus the two R questions 3 and 36 (switched from 92 pages on 2026-10-18)
+    ("Quant Primer", "#d6336c", "items"),  # Bester, An Interview Primer for Quantitative Finance: 39 questions (41 numbered minus R questions 3 and 36) + 19 reading sections = 58 items (switched from 92 pages on 2026-10-18)
 ]
 TEXT, TEXT2, GRID = "#1f1f1e", "#5f5e58", "#e6e5e0"
 

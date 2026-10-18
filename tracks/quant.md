@@ -35,9 +35,13 @@
   Log: 2026-10-17 added, 0 of 92.
   2026-10-18: progress is tracked by question, not page. The book has 41 numbered questions across the 15 interview write-ups
   in chapter 1; chapters 2 to 4 (Air Force One, Stick Breaking, regression theory, soft interview) are reading, not counted.
-  The two R questions (3, cbind; 36, data structures, merge, lapply) are skipped as irrelevant to the target firms, so the
-  total is 39. A question counts when solved and the answer checked.
-  Done: 1 (two dice), 4 (Python mylist[-1]). In progress: 2 (E[max(X, Y)] for correlated normals). 2 of 39.
+  The two R questions (3 and 36, both entirely about R) are skipped as irrelevant to the target firms, leaving 39 questions.
+  A question counts when solved and the answer checked.
+  Reading sections also count, one item each, 19 total: Introduction (How to prepare, Recruiters), 2.1 Air Force One,
+  2.2 Stick breaking, 3.1 to 3.3 regression theory, 4.1 and 4.2 soft interview, Appendix A tricks A.1 to A.6 (simplest case,
+  unit square, recursion, CLT, normal probabilities in your head, law of total expectation), Appendix B code B.1 to B.3,
+  Appendix C crib sheet. Total 58 items.
+  Done: questions 1 (two dice), 4 (Python mylist[-1]). In progress: question 2 (E[max(X, Y)] for correlated normals). 2 of 58.
 - [ ] **An Introduction to Statistical Learning with Applications in Python** by Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor (Tier 2)
   Applied stats and ML foundations for quant research: regression, classification, resampling, tree methods, unsupervised learning.
 
