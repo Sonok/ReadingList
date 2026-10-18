@@ -41,7 +41,7 @@
   2.2 Stick breaking, 3.1 to 3.3 regression theory, 4.1 and 4.2 soft interview, Appendix A tricks A.1 to A.6 (simplest case,
   unit square, recursion, CLT, normal probabilities in your head, law of total expectation), Appendix B code B.1 to B.3,
   Appendix C crib sheet. Total 58 items.
-  Done: questions 1 (two dice), 4 (Python mylist[-1]). In progress: question 2 (E[max(X, Y)] for correlated normals). 2 of 58.
+  Done: questions 1 (two dice), 2 (E[max(X, Y)] = sqrt((1 - rho)/pi) for correlated normals), 4 (Python mylist[-1]). 3 of 58.
 - [ ] **An Introduction to Statistical Learning with Applications in Python** by Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor (Tier 2)
   Applied stats and ML foundations for quant research: regression, classification, resampling, tree methods, unsupervised learning.
 
