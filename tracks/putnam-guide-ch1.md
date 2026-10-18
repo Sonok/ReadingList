@@ -9,11 +9,11 @@ Counts: 1 definition, 5 theorems, 13 worked examples, 1 strategies section, 52 e
 
 ## 1.1 Basics and 1.2 Important Theorems (read)
 
-- [ ] Definition 1.1. A set S is said to be countable if there is a bijection f : S → N. In other words, an infi
+- [x] Definition 1.1. A set S is said to be countable if there is a bijection f : S → N. In other words, an infi
 - [ ] Theorem 1.1 (Useful Identities). (a) an − bn = (a − b)(an−1 + an−2 b + · · · + abn−2 + bn−1 ).
-- [ ] Theorem 1.2. The sets N, Z, and Q are countable, and R is uncountable.
-- [ ] Theorem 1.3. Suppose A1 , A2 , A3 , . . . is a sequence of countable sets. Then
-- [ ] Theorem 1.4. Suppose A1 , A2 , . . . is a sequence of sets for which each Ai has at least 2 elements. T
+- [x] Theorem 1.2. The sets N, Z, and Q are countable, and R is uncountable.
+- [x] Theorem 1.3. Suppose A1 , A2 , A3 , . . . is a sequence of countable sets. Then
+- [x] Theorem 1.4. Suppose A1 , A2 , . . . is a sequence of sets for which each Ai has at least 2 elements. T
 - [ ] Theorem 1.5. If X is a countable set, then the set consisting of all finite subsets of X is also counta
 
 ## 1.3 and 1.4 Examples (read the solution after attempting)
@@ -93,4 +93,11 @@ Counts: 1 definition, 5 theorems, 13 worked examples, 1 strategies section, 52 e
 
 ## Log
 
-_(none yet)_
+Progress source: the Putnam repo at ~/Desktop/Putnam_Prep. Read logs/ch01_communication_tools.md (master tracker, running log
+at the bottom), logs/20*.tex (one daily log per study day), sessions/session0N.tex ("Resume here" marker), and
+sessions/session0N_writeup.tex (filled write-ups). Skip *_solutions.tex and putnamprep.sty. The session sheets number
+theorems 1 to 4 for the guide's 1.2 to 1.5; the guide's Theorem 1.1 (identities) is the sheet's "five algebraic identities".
+
+- 2026-10-17: Session 1 lesson day, about 90 min. Definition 1.1 and Theorems 1.2 to 1.4 read and understood (Cantor took an
+  hour; the 3-string game version landed). Resume 2026-10-18 at Theorem 1.5, then identities, then the four lesson exercises.
+  Session 2 not started. No exercises or write-ups yet. 4 of 72.

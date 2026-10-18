@@ -22,6 +22,7 @@
   clean written solutions at the one-or-two-a-week cadence, not clearing the list. Chapter 1 target is end of 2026.
   Later chapters are bits and pieces by topic, not cover to cover. This is the Putnam Guide's share of the six-book goal in the README.
   Log: 2026-10-11 started, 0 of 72.
+  2026-10-17: first study session; Definition 1.1 and Theorems 1.2 to 1.4 understood, 4 of 72. Resuming at Theorem 1.5 on 2026-10-18.
 
 ## Done
 
