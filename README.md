@@ -20,7 +20,7 @@ Personal reading list across three tracks. Each track lives in its own file unde
 | CP Handbook | `██░░░░░░░░░░░░░░░░░░` | 11% | 30 of 279 pages |
 | DDIA | `█░░░░░░░░░░░░░░░░░░░` | 6% | 38 of 600 pages |
 | Putnam Guide ch 1 | `█░░░░░░░░░░░░░░░░░░░` | 6% | 4 of 72 items |
-| Quant Primer | `█░░░░░░░░░░░░░░░░░░░` | 5% | 3 of 58 items |
+| Quant Primer | `█░░░░░░░░░░░░░░░░░░░` | 3% | 2 of 58 items |
 <!-- progress:end -->
 
 Data lives in [progress.csv](progress.csv). After logging, run `python3 scripts/plot_progress.py` to redraw the chart and this table.
