@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Render progress.png and the README progress table from progress.csv.
 
-progress.csv rows: date,book,done,total. Units are pages. The green book baseline (30 of 191 as of 2026-10-03) is an
+progress.csv rows: date,book,done,total. Units per book are in BOOKS below (pages, items, or questions). The green book baseline (30 of 191 as of 2026-10-03) is an
 estimate from problems done in ch 2 and 4 plus ch 1 and 3.1; forward progress is logged by page.
 Run after appending a row:  python3 scripts/plot_progress.py
 """
@@ -26,8 +26,8 @@ BOOKS = [
     ("A Tour of C++", "#eb6834", "pages"),
     ("CP Handbook", "#9a5bd9", "pages"),  # 279-page copy; read from the start, baseline page 24 (corrected 2026-10-16)
     ("DDIA", "#eda100", "pages"),
-    ("Putnam Guide ch 1", "#1baf7a", "items"),
-    ("Quant Primer", "#d6336c", "pages"),  # Bester, An Interview Primer for Quantitative Finance, 92 pages  # 1 definition + 5 theorems + 13 examples + 1 strategies section + 52 exercises
+    ("Putnam Guide ch 1", "#1baf7a", "items"),  # 1 definition + 5 theorems + 13 examples + 1 strategies section + 52 exercises
+    ("Quant Primer", "#d6336c", "questions"),  # Bester, An Interview Primer for Quantitative Finance: 41 numbered questions (switched from 92 pages on 2026-10-18)
 ]
 TEXT, TEXT2, GRID = "#1f1f1e", "#5f5e58", "#e6e5e0"
 

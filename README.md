@@ -20,7 +20,7 @@ Personal reading list across three tracks. Each track lives in its own file unde
 | CP Handbook | `██░░░░░░░░░░░░░░░░░░` | 11% | 30 of 279 pages |
 | DDIA | `█░░░░░░░░░░░░░░░░░░░` | 6% | 38 of 600 pages |
 | Putnam Guide ch 1 | `█░░░░░░░░░░░░░░░░░░░` | 6% | 4 of 72 items |
-| Quant Primer | `░░░░░░░░░░░░░░░░░░░░` | 0% | 0 of 92 pages |
+| Quant Primer | `░░░░░░░░░░░░░░░░░░░░` | 2% | 1 of 41 questions |
 <!-- progress:end -->
 
 Data lives in [progress.csv](progress.csv). After logging, run `python3 scripts/plot_progress.py` to redraw the chart and this table.
@@ -48,7 +48,7 @@ The chart above tracks all six.
 | [~] | A Tour of C++ | Bjarne Stroustrup | [quant](tracks/quant.md) |
 | [~] | Competitive Programmer's Handbook (draft, Aug 2019) | Antti Laaksonen | [putnam-cp](tracks/putnam-cp.md) |
 | [~] | Putnam Guide | R. Ebrahimian (UMD) | [putnam-cp](tracks/putnam-cp.md) |
-| [ ] | An Interview Primer for Quantitative Finance | Dirk Bester | [quant](tracks/quant.md) |
+| [~] | An Interview Primer for Quantitative Finance | Dirk Bester | [quant](tracks/quant.md) |
 
 ### Tier 2
 

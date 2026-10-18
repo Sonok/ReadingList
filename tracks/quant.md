@@ -28,11 +28,15 @@
   Pages: estimated 30 of 191 read as of 2026-10-03 (ch 1, about half of ch 2, a quarter of ch 4, and 3.1); logged by page from here. Reading is light until the Bloomberg interview
   on 2026-10-08 (see [career.md](career.md)).
   Brainteasers, probability, stochastic calculus basics, and finance questions in the form they show up in quant interviews.
-- [ ] **An Interview Primer for Quantitative Finance** by Dirk Bester, v1.2.0 (Tier 1)
+- [~] **An Interview Primer for Quantitative Finance** by Dirk Bester, v1.2.0 (Tier 1)
   Shorter primer on the interview process and question types. Free PDF (github.com/dwcoder/QuantitativePrimer), 92 pages.
   Moved to Tier 1 on 2026-10-17 as one of the six books in the end-of-2027 goal (see the README). Short enough to finish
   in a few sittings; schedule it before the summer 2028 application cycle opens around August 2027.
   Log: 2026-10-17 added, 0 of 92.
+  2026-10-18: progress is tracked by question, not page. The book has 41 numbered questions across the 15 interview write-ups
+  in chapter 1; chapters 2 to 4 (Air Force One, Stick Breaking, regression theory, soft interview) are reading, not counted.
+  A question counts when solved and the answer checked. Question 1 done, Question 2 (E[max(X, Y)] for correlated normals)
+  in progress. 1 of 41.
 - [ ] **An Introduction to Statistical Learning with Applications in Python** by Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor (Tier 2)
   Applied stats and ML foundations for quant research: regression, classification, resampling, tree methods, unsupervised learning.
 
