@@ -35,8 +35,9 @@
   Log: 2026-10-17 added, 0 of 92.
   2026-10-18: progress is tracked by question, not page. The book has 41 numbered questions across the 15 interview write-ups
   in chapter 1; chapters 2 to 4 (Air Force One, Stick Breaking, regression theory, soft interview) are reading, not counted.
-  A question counts when solved and the answer checked. Question 1 done, Question 2 (E[max(X, Y)] for correlated normals)
-  in progress. 1 of 41.
+  The two R questions (3, cbind; 36, data structures, merge, lapply) are skipped as irrelevant to the target firms, so the
+  total is 39. A question counts when solved and the answer checked.
+  Done: 1 (two dice), 4 (Python mylist[-1]). In progress: 2 (E[max(X, Y)] for correlated normals). 2 of 39.
 - [ ] **An Introduction to Statistical Learning with Applications in Python** by Gareth James, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor (Tier 2)
   Applied stats and ML foundations for quant research: regression, classification, resampling, tree methods, unsupervised learning.
 
