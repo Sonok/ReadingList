@@ -19,7 +19,7 @@
 - [~] **A Practical Guide to Quantitative Finance Interviews** by Xinfeng Zhou (Tier 2)
   Status (2026-09-28): ch 2 brainteasers mostly done, ch 4 probability a lot done. Not started: ch 3 calculus and linear
   algebra, ch 5 stochastic processes, ch 6 finance, ch 7 algorithms and numerical methods.
-  2026-10-11: dropped to Tier 2 since the QT recruiting cycle has passed; Putnam Guide takes its slot. New approach is
+  2026-10-11: dropped to Tier 2 since the QT recruiting cycle has passed. New approach is
   sampling sections as needed rather than problem by problem, so page progress is no longer tracked for this book.
   Earlier plan: one problem a day, alongside the C book. Goal is getting through the whole book, not clearing every problem in a
   chapter before moving on. Order: ch 3 (started 2026-10-01), then 7, 5, 6; circle back to ch 2 and 4 leftovers after.
@@ -55,7 +55,7 @@
 - [ ] **The Theory of Poker** by David Sklansky (Tier 2)
   Expected value, pot odds, and decision-making under uncertainty. Common background for trading-firm interviews.
   Moved to Tier 2 on 2026-10-13: SIG QT interviews are built around poker-style decisions and SIG recommends this book.
-  Light reading, 172 pages. Read it as the weekly non-C item alongside Putnam, not instead of C or C++.
+  Light reading, 172 pages. Read it as the weekly non-C item, not instead of C or C++.
 
 ### Foundations (Tier 3)
 

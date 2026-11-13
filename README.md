@@ -5,7 +5,7 @@ Personal reading list across three tracks. Each track lives in its own file unde
 | Track | File |
 |---|---|
 | Career progression | [tracks/career.md](tracks/career.md) |
-| Putnam & competitive programming | [tracks/putnam-cp.md](tracks/putnam-cp.md) |
+| Competitive programming | [tracks/cp.md](tracks/cp.md) |
 | Quant dev / quant research | [tracks/quant.md](tracks/quant.md) |
 
 ## Progress
@@ -19,24 +19,22 @@ Personal reading list across three tracks. Each track lives in its own file unde
 | A Tour of C++ | `░░░░░░░░░░░░░░░░░░░░` | 2% | 4 of 226 pages |
 | CP Handbook | `██░░░░░░░░░░░░░░░░░░` | 11% | 30 of 279 pages |
 | DDIA | `█░░░░░░░░░░░░░░░░░░░` | 6% | 38 of 600 pages |
-| Putnam Guide ch 1 | `█░░░░░░░░░░░░░░░░░░░` | 6% | 4 of 72 items |
 | Quant Primer | `█░░░░░░░░░░░░░░░░░░░` | 3% | 2 of 58 items |
 <!-- progress:end -->
 
 Data lives in [progress.csv](progress.csv). After logging, run `python3 scripts/plot_progress.py` to redraw the chart and this table.
 
-## Goal: six books by December 31, 2027
+## Goal: five books by December 31, 2027
 
-Set 2026-10-17. Finish these six before the end of 2027:
+Set 2026-10-17 as six books; the Putnam Guide moved out on 2026-11-12 (Putnam prep is tracked in its own repo). Finish these five before the end of 2027:
 
 1. The C Programming Language (K&R)
 2. A Tour of C++
-3. Putnam Guide (chapter 1 by the end of 2026, meaning all examples plus chosen exercises; later chapters selectively, not cover to cover)
-4. Designing Data-Intensive Applications
-5. Competitive Programmer's Handbook
-6. An Interview Primer for Quantitative Finance
+3. Designing Data-Intensive Applications
+4. Competitive Programmer's Handbook
+5. An Interview Primer for Quantitative Finance
 
-The chart above tracks all six.
+The chart above tracks all five.
 
 ## Priority order
 
@@ -46,8 +44,7 @@ The chart above tracks all six.
 |---|---|---|---|
 | [~] | The C Programming Language (2nd ed.) | Brian Kernighan, Dennis Ritchie | [quant](tracks/quant.md) |
 | [~] | A Tour of C++ | Bjarne Stroustrup | [quant](tracks/quant.md) |
-| [~] | Competitive Programmer's Handbook (draft, Aug 2019) | Antti Laaksonen | [putnam-cp](tracks/putnam-cp.md) |
-| [~] | Putnam Guide | R. Ebrahimian (UMD) | [putnam-cp](tracks/putnam-cp.md) |
+| [~] | Competitive Programmer's Handbook (draft, Aug 2019) | Antti Laaksonen | [cp](tracks/cp.md) |
 | [~] | An Interview Primer for Quantitative Finance | Dirk Bester | [quant](tracks/quant.md) |
 
 ### Tier 2

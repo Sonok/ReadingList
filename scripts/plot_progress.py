@@ -20,13 +20,12 @@ ROOT = Path(__file__).resolve().parent.parent
 CSV, PNG, README = ROOT / "progress.csv", ROOT / "progress.png", ROOT / "README.md"
 
 # Fixed categorical order and hue per book; never reassigned when a book is added or finished.
-# Green book (#1baf7a) was removed 2026-10-11; its hue went to Putnam Guide.
+# Green book (#1baf7a) was removed 2026-10-11; Putnam Guide, which reused that hue, was removed 2026-11-12.
 BOOKS = [
     ("K&R", "#2a78d6", "pages"),
     ("A Tour of C++", "#eb6834", "pages"),
     ("CP Handbook", "#9a5bd9", "pages"),  # 279-page copy; read from the start, baseline page 24 (corrected 2026-10-16)
     ("DDIA", "#eda100", "pages"),
-    ("Putnam Guide ch 1", "#1baf7a", "items"),  # 1 definition + 5 theorems + 13 examples + 1 strategies section + 52 exercises
     ("Quant Primer", "#d6336c", "items"),  # Bester, An Interview Primer for Quantitative Finance: 39 questions (41 numbered minus R questions 3 and 36) + 19 reading sections = 58 items (switched from 92 pages on 2026-10-18)
 ]
 TEXT, TEXT2, GRID = "#1f1f1e", "#5f5e58", "#e6e5e0"
