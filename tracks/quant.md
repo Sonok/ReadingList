@@ -8,8 +8,8 @@
   memmove over contiguous memory that runs at many GB/s. For a few hundred elements it is often faster than a skip list's
   pointer chasing, allocations, and random-level logic. Big-O hides constant factors and cache behavior. Read K&R for the
   memory model, pointers, and arrays; the cache-locality half of the lesson belongs to the low-latency book in the career track.
-  Log: 2026-09-29 started, read to page 13. 2026-09-30 to page 18. 2026-10-06 to page 28. 2026-10-09 to page 36, finished chapter 1. 2026-10-11 to page 41 (through 2.6), then read 2.8 through 2.12 with 2.7 skipped. 2026-10-12 backfilled 2.7, chapter 2 done, then to page 56. 2026-10-13 to page 61, chapter 3 done. 2026-10-16 to page 66, 4.2 done. 2026-10-17 to page 71, 4.3 done (reverse Polish calculator). 2026-10-18 to page 76, 4.8 done. 2026-11-12 to page 77, first page back after a 25-day break. Currently on
-  page 78 of 238 (32%), around section 4.9 Initialization.
+  Log: 2026-09-29 started, read to page 13. 2026-09-30 to page 18. 2026-10-06 to page 28. 2026-10-09 to page 36, finished chapter 1. 2026-10-11 to page 41 (through 2.6), then read 2.8 through 2.12 with 2.7 skipped. 2026-10-12 backfilled 2.7, chapter 2 done, then to page 56. 2026-10-13 to page 61, chapter 3 done. 2026-10-16 to page 66, 4.2 done. 2026-10-17 to page 71, 4.3 done (reverse Polish calculator). 2026-10-18 to page 76, 4.8 done. 2026-11-12 to page 77, first page back after a 25-day break. 2026-11-13 to page 82, chapter 4 done (4.9 to 4.11: initialization, recursion, preprocessor). Currently on
+  page 83 of 238 (34%), start of chapter 5 Pointers and Arrays.
 - [~] **A Tour of C++** by Bjarne Stroustrup (Tier 1)
   Fast, authoritative overview of modern C++. Second priority overall, after K&R. Also pays off directly in competitive programming.
   Plan (started 2026-09-28): one pass, no re-reading. Chapters 1 to 8 (core language) at one chapter per sitting with a
