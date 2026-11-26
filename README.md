@@ -26,11 +26,11 @@ Data lives in [progress.csv](progress.csv) and dated entries in the [reading log
 | [Quant dev](tracks/quant-dev.md) | C++ applied to trading: order books, concurrency, pricing code | TraderMath problems |
 | [Quant trading / research](tracks/quant-research.md) | Probability, statistics, and markets | Quant Primer |
 | [Tech](tracks/tech.md) | Algorithms and data systems | CP Handbook, DDIA |
-| [HPC and ML inference](tracks/hpc.md) | Computer architecture, parallel and GPU programming, fast inference | CMSC411 (course) |
+| [HPC and ML inference](tracks/hpc.md) | Computer architecture, parallel and GPU programming, fast inference | CMSC411 in spring 2027 |
 
 ## Coursework
 
-University of Maryland courses that go with the tracks.
+University of Maryland courses for spring 2027 that go with the tracks.
 
 | Course | Title | Track |
 |---|---|---|
@@ -68,6 +68,7 @@ The chart above tracks all five.
 | [ ] | An Introduction to Statistical Learning with Applications in Python | James, Witten, Hastie, Tibshirani, Taylor | [quant research](tracks/quant-research.md) |
 | [ ] | The Theory of Poker | David Sklansky | [quant research](tracks/quant-research.md) |
 | [~] | Quant coding problems (50 problems) | TraderMath | [quant dev](tracks/quant-dev.md) |
+| [ ] | Computer Architecture: A Quantitative Approach (6th ed.) | John Hennessy, David Patterson | [hpc](tracks/hpc.md) |
 
 ### Tier 3: later
 
@@ -75,6 +76,8 @@ The chart above tracks all five.
 |---|---|---|---|
 | [ ] | Introduction to C++ for Financial Engineers: An Object-Oriented Approach | Daniel J. Duffy | [quant dev](tracks/quant-dev.md) |
 | [ ] | Computer Systems: A Programmer's Perspective (3rd ed.) | Randal Bryant, David O'Hallaron | [systems](tracks/systems.md) |
+| [ ] | Programming Massively Parallel Processors (4th ed.) | Wen-mei Hwu, David Kirk, Izzat El Hajj | [hpc](tracks/hpc.md) |
+| [ ] | Performance Analysis and Tuning on Modern CPUs | Denis Bakhvalov | [hpc](tracks/hpc.md) |
 | [ ] | Introduction to Mathematical Statistics (7th ed., 2012) | Robert V. Hogg, Joseph McKean, Allen T. Craig | [quant research](tracks/quant-research.md) |
 | [ ] | Python for Data Analysis (3rd ed.) | Wes McKinney | [quant research](tracks/quant-research.md) |
 | [ ] | Trading and Exchanges: Market Microstructure for Practitioners | Larry Harris | [quant research](tracks/quant-research.md) |

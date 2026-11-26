@@ -42,10 +42,10 @@ Probability, statistics, and markets.
 
 ## Courses
 
-- **CMSC764 / AMSC764 Advanced Numerical Optimization** (University of Maryland, graduate)
+- **CMSC764 / AMSC764 Advanced Numerical Optimization** (University of Maryland, graduate, spring 2027)
   Convex analysis, gradient and quasi-Newton methods, duality, proximal and Lagrangian methods (ADMM, PDHG), and
   stochastic methods (SGD, MCMC), with implementations in Python. Applications in machine learning and model fitting.
-- **MATH611 Combinatorics** (University of Maryland, graduate)
+- **MATH611 Combinatorics** (University of Maryland, graduate, spring 2027)
   Algebraic, enumerative, extremal, and probabilistic combinatorics, with an emphasis on proofs.
 
 Dated entries are in the [reading log](../log.md).
