@@ -6,10 +6,10 @@
 <title>Reading progress</title>
 <style>
   :root {
-    --surface: #ffffff; --text: #1f1f1e; --text2: #5f5e58; --grid: #e6e5e0; --card: #ffffff; --shadow: rgba(0, 0, 0, .12);
+    --surface: #ffffff; --text: #1f1f1e; --text2: #5f5e58; --grid: #e6e5e0; --card: #ffffff; --shadow: rgba(0, 0, 0, .12); --band: #f4f3ef;
   }
   @media (prefers-color-scheme: dark) {
-    :root { --surface: #171716; --text: #f1f0ec; --text2: #a3a299; --grid: #33322e; --card: #232321; --shadow: rgba(0, 0, 0, .5); }
+    :root { --surface: #171716; --text: #f1f0ec; --text2: #a3a299; --grid: #33322e; --card: #232321; --shadow: rgba(0, 0, 0, .5); --band: #222220; }
   }
   * { box-sizing: border-box; }
   body {
@@ -82,6 +82,13 @@ document.getElementById("legend").innerHTML = books.map(b => {
   const p = b.points[b.points.length - 1];
   return `<li><span class="sw" style="background:${b.color}"></span>${b.name} <b>${pct(p).toFixed(0)}%</b></li>`;
 }).join("");
+
+// Labeled date ranges, shaded behind everything else.
+for (const b of DATA.bands || []) {
+  const xa = X(day(b.from)), xb = X(day(b.to));
+  el("rect", { x: xa, y: M.t, width: xb - xa, height: H - M.b - M.t, fill: "var(--band)" });
+  el("text", { x: (xa + xb) / 2, y: M.t + 20, "text-anchor": "middle" }).textContent = b.label;
+}
 
 // Grid and axes.
 const step = yMax <= 60 ? 10 : 20;

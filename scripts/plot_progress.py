@@ -40,6 +40,9 @@ BOOKS = [
     ("Quant Primer", "#d6336c", "items"),  # Bester, An Interview Primer for Quantitative Finance: 39 questions (41 numbered minus R questions 3 and 36) + 19 reading sections = 58 items (switched from 92 pages on 2026-10-18)
 ]
 TEXT, TEXT2, GRID = "#1f1f1e", "#5f5e58", "#e6e5e0"
+# Labeled date ranges drawn as a shaded band behind the lines: (first day, last day, label).
+BANDS = [(date(2026, 10, 19), date(2026, 11, 11), "Interview prep")]
+BAND = "#f4f3ef"
 
 series = defaultdict(list)
 with CSV.open() as f:
@@ -83,6 +86,11 @@ ax.set_xlim(x0, xt + (xt - x0) * 0.07)
 ax.annotate(f"{top:.0f}%", (xt, top), xytext=(9, 0), textcoords="offset points", va="center",
             fontsize=11, fontweight="bold", color=TEXT, annotation_clip=False)
 
+for b0, b1, text in BANDS:
+    ax.axvspan(b0, b1, color=BAND, lw=0, zorder=0.5)
+    ax.text(mdates.date2num(b0) + (b1 - b0).days / 2, ax.get_ylim()[1] * 0.955, text, ha="center", va="center",
+            fontsize=9, color=TEXT2, zorder=2)
+
 ax.yaxis.set_major_locator(plt.MultipleLocator(10 if ax.get_ylim()[1] <= 60 else 20))
 ax.yaxis.set_major_formatter(lambda v, _: f"{v:.0f}%")
 ax.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=mdates.MO, interval=2))
@@ -108,7 +116,9 @@ for line in LOG.read_text().splitlines():
         book = LOG_HEADINGS.get(line[3:].strip())
     elif book and (m := re.match(r"- (\d{4}-\d{2}-\d{2}): (.*)", line)):
         notes[book][m.group(1)] = m.group(2)
-payload = {"today": today.isoformat(), "books": [
+payload = {"today": today.isoformat(),
+           "bands": [{"from": b0.isoformat(), "to": b1.isoformat(), "label": html.escape(text)} for b0, b1, text in BANDS],
+           "books": [
     {"name": name, "color": color, "unit": unit, "points": [
         {"d": d.isoformat(), "done": done, "total": total, "note": html.escape(notes[name].get(d.isoformat(), ""))}
         for d, done, total in series.get(name, [])]}
