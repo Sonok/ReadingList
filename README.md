@@ -22,10 +22,10 @@ Data lives in [progress.csv](progress.csv) and dated entries in the [reading log
 
 | Track | Focus | Reading now |
 |---|---|---|
-| [Quant dev](tracks/quant-dev.md) | C and C++ for trading systems, from the memory model up | K&R, A Tour of C++ |
+| [Systems engineering](tracks/systems.md) | C and C++ from the memory model up, and what the machine does underneath | K&R, A Tour of C++ |
+| [Quant dev](tracks/quant-dev.md) | C++ applied to trading: order books, concurrency, pricing code | TraderMath problems |
 | [Quant trading / research](tracks/quant-research.md) | Probability, statistics, and markets | Quant Primer |
-| [Systems engineering](tracks/systems.md) | Data systems and what the machine does underneath | DDIA |
-| [Tech](tracks/tech.md) | Algorithms and competitive programming | CP Handbook |
+| [Tech](tracks/tech.md) | Algorithms and data systems | CP Handbook, DDIA |
 
 ## Goal: five books by December 31, 2027
 
@@ -43,8 +43,8 @@ The chart above tracks all five.
 
 | | Title | Author | Track |
 |---|---|---|---|
-| [~] | The C Programming Language (2nd ed.) | Brian Kernighan, Dennis Ritchie | [quant dev](tracks/quant-dev.md) |
-| [~] | A Tour of C++ | Bjarne Stroustrup | [quant dev](tracks/quant-dev.md) |
+| [~] | The C Programming Language (2nd ed.) | Brian Kernighan, Dennis Ritchie | [systems](tracks/systems.md) |
+| [~] | A Tour of C++ | Bjarne Stroustrup | [systems](tracks/systems.md) |
 | [~] | Competitive Programmer's Handbook (draft, Aug 2019) | Antti Laaksonen | [tech](tracks/tech.md) |
 | [~] | An Interview Primer for Quantitative Finance | Dirk Bester | [quant research](tracks/quant-research.md) |
 
@@ -53,9 +53,10 @@ The chart above tracks all five.
 | | Title | Author | Track |
 |---|---|---|---|
 | [~] | A Practical Guide to Quantitative Finance Interviews | Xinfeng Zhou | [quant research](tracks/quant-research.md) |
-| [~] | Designing Data-Intensive Applications (2nd ed.) | Martin Kleppmann, Chris Riccomini | [systems](tracks/systems.md) |
+| [~] | Designing Data-Intensive Applications (2nd ed.) | Martin Kleppmann, Chris Riccomini | [tech](tracks/tech.md) |
 | [ ] | An Introduction to Statistical Learning with Applications in Python | James, Witten, Hastie, Tibshirani, Taylor | [quant research](tracks/quant-research.md) |
 | [ ] | The Theory of Poker | David Sklansky | [quant research](tracks/quant-research.md) |
+| [~] | Quant coding problems (50 problems) | TraderMath | [quant dev](tracks/quant-dev.md) |
 
 ### Tier 3: later
 
