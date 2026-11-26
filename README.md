@@ -4,7 +4,9 @@ What I'm reading to get better at systems programming, quantitative development 
 
 ## Progress
 
-![Progress chart: percent complete over time for each book in progress](progress.png)
+[![Progress chart: percent complete over time for each book in progress](progress.png)](https://sonok.github.io/ReadingList/)
+
+**[Open the interactive chart](https://sonok.github.io/ReadingList/)** to hover over any day and see what was read.
 
 <!-- progress:start -->
 | Book | Progress | | Unit |
