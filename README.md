@@ -1,6 +1,6 @@
 # ReadingList
 
-What I'm reading to get better at systems programming, quantitative development, and quantitative research. Every book in progress is logged by page and charted, so the list shows what has been read, not only what is planned.
+What I'm reading to get better at systems programming, quantitative development and research, and high-performance computing. Every book in progress is logged by page and charted, so the list shows what has been read, not only what is planned.
 
 ## Progress
 
@@ -26,6 +26,7 @@ Data lives in [progress.csv](progress.csv) and dated entries in the [reading log
 | [Quant dev](tracks/quant-dev.md) | C++ applied to trading: order books, concurrency, pricing code | TraderMath problems |
 | [Quant trading / research](tracks/quant-research.md) | Probability, statistics, and markets | Quant Primer |
 | [Tech](tracks/tech.md) | Algorithms and data systems | CP Handbook, DDIA |
+| [HPC and ML inference](tracks/hpc.md) | Computer architecture, parallel and GPU programming, fast inference | Planned, after the systems track |
 
 ## Goal: five books by December 31, 2027
 
