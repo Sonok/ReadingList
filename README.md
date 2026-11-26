@@ -11,7 +11,7 @@ What I'm reading to get better at systems programming, quantitative development 
 <!-- progress:start -->
 | Book | Progress | | Unit |
 |---|---|---|---|
-| K&R | `██████████░░░░░░░░░░` | 48% | 115 of 238 pages |
+| K&R | `██████████░░░░░░░░░░` | 49% | 117 of 238 pages |
 | A Tour of C++ | `░░░░░░░░░░░░░░░░░░░░` | 2% | 4 of 226 pages |
 | CP Handbook | `██░░░░░░░░░░░░░░░░░░` | 11% | 30 of 279 pages |
 | DDIA | `█░░░░░░░░░░░░░░░░░░░` | 6% | 38 of 600 pages |

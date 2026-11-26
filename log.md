@@ -25,6 +25,7 @@ Dated entries for each book in progress. Page counts are pages finished. The cha
 - 2026-11-23: To page 105, 5.10 done (command-line arguments, find with -x and -n flags).
 - 2026-11-24: To page 108, 5.11 done (pointers to functions).
 - 2026-11-25: To page 113, chapter 5 done; 5.12 read for the declaration-reading rule and const placement, then to page 115, 6.1 done (basics of structures).
+- 2026-11-26: To page 117, 6.2 done (structures and functions, the -> operator and its precedence).
 
 ## A Tour of C++
 

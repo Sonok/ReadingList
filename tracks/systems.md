@@ -6,7 +6,7 @@ C and C++ from the memory model up, and what the machine does underneath the cod
   The memory model underneath C++: pointers, arrays, and how data is laid out. Read first because layout decides real
   performance in ways big-O hides. For a few hundred elements, an array's O(n) insert is a memmove over contiguous memory
   and often beats a skip list's pointer chasing and allocations.
-  Status: page 116 of 238 (48%), section 6.2 Structures and Functions. Chapters 1 to 5 done.
+  Status: page 118 of 238 (49%), section 6.3 Arrays of Structures. Chapters 1 to 5 done.
 - [~] **A Tour of C++** by Bjarne Stroustrup (Tier 1)
   Fast, authoritative overview of modern C++. Next after K&R.
   Plan: one pass. Chapters 1 to 8 (core language) at one chapter per sitting with a small program each. Chapters 9 onward
