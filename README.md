@@ -1,12 +1,6 @@
 # ReadingList
 
-Personal reading list across three tracks. Each track lives in its own file under `tracks/`.
-
-| Track | File |
-|---|---|
-| Career progression | [tracks/career.md](tracks/career.md) |
-| Competitive programming | [tracks/cp.md](tracks/cp.md) |
-| Quant dev / quant research | [tracks/quant.md](tracks/quant.md) |
+What I'm reading to get better at systems programming, quantitative development, and quantitative research. Every book in progress is logged by page and charted, so the list shows what has been read, not only what is planned.
 
 ## Progress
 
@@ -22,11 +16,18 @@ Personal reading list across three tracks. Each track lives in its own file unde
 | Quant Primer | `█░░░░░░░░░░░░░░░░░░░` | 3% | 2 of 58 items |
 <!-- progress:end -->
 
-Data lives in [progress.csv](progress.csv). After logging, run `python3 scripts/plot_progress.py` to redraw the chart and this table.
+Data lives in [progress.csv](progress.csv) and dated entries in the [reading log](log.md). After logging, `python3 scripts/plot_progress.py` redraws the chart and this table.
+
+## Tracks
+
+| Track | Focus | Reading now |
+|---|---|---|
+| [Quant dev](tracks/quant-dev.md) | C and C++ for trading systems, from the memory model up | K&R, A Tour of C++ |
+| [Quant trading / research](tracks/quant-research.md) | Probability, statistics, and markets | Quant Primer |
+| [Systems engineering](tracks/systems.md) | Data systems and what the machine does underneath | DDIA |
+| [Tech](tracks/tech.md) | Algorithms and competitive programming | CP Handbook |
 
 ## Goal: five books by December 31, 2027
-
-Set 2026-10-17 as six books; the Putnam Guide moved out on 2026-11-12 (Putnam prep is tracked in its own repo). Finish these five before the end of 2027:
 
 1. The C Programming Language (K&R)
 2. A Tour of C++
@@ -38,42 +39,39 @@ The chart above tracks all five.
 
 ## Priority order
 
-### Tier 1
+### Tier 1: reading now
 
 | | Title | Author | Track |
 |---|---|---|---|
-| [~] | The C Programming Language (2nd ed.) | Brian Kernighan, Dennis Ritchie | [quant](tracks/quant.md) |
-| [~] | A Tour of C++ | Bjarne Stroustrup | [quant](tracks/quant.md) |
-| [~] | Competitive Programmer's Handbook (draft, Aug 2019) | Antti Laaksonen | [cp](tracks/cp.md) |
-| [~] | An Interview Primer for Quantitative Finance | Dirk Bester | [quant](tracks/quant.md) |
+| [~] | The C Programming Language (2nd ed.) | Brian Kernighan, Dennis Ritchie | [quant dev](tracks/quant-dev.md) |
+| [~] | A Tour of C++ | Bjarne Stroustrup | [quant dev](tracks/quant-dev.md) |
+| [~] | Competitive Programmer's Handbook (draft, Aug 2019) | Antti Laaksonen | [tech](tracks/tech.md) |
+| [~] | An Interview Primer for Quantitative Finance | Dirk Bester | [quant research](tracks/quant-research.md) |
 
-### Tier 2
-
-| | Title | Author | Track |
-|---|---|---|---|
-| [~] | A Practical Guide to Quantitative Finance Interviews | Xinfeng Zhou | [quant](tracks/quant.md) |
-| [~] | Designing Data-Intensive Applications (2nd ed.) | Martin Kleppmann, Chris Riccomini | [career](tracks/career.md) |
-| [ ] | An Introduction to Statistical Learning with Applications in Python | James, Witten, Hastie, Tibshirani, Taylor | [quant](tracks/quant.md) |
-| [ ] | The Theory of Poker | David Sklansky | [quant](tracks/quant.md) |
-
-### Tier 3
-
-Not a priority until the Tier 1 books are done.
+### Tier 2: next
 
 | | Title | Author | Track |
 |---|---|---|---|
-| [ ] | Quant Job Interview Questions and Answers | Mark Joshi, Nick Denson, Andrew Downes | [quant](tracks/quant.md) |
-| [ ] | Heard on the Street: Quantitative Questions from Wall Street Job Interviews | Timothy Falcon Crack | [quant](tracks/quant.md) |
-| [ ] | Introduction to Mathematical Statistics (7th ed., 2012) | Robert V. Hogg, Joseph McKean, Allen T. Craig | [quant](tracks/quant.md) |
-| [ ] | Python for Data Analysis (3rd ed.) | Wes McKinney | [quant](tracks/quant.md) |
-| [ ] | Paul Wilmott on Quantitative Finance | Paul Wilmott | [quant](tracks/quant.md) |
-| [ ] | Trading and Exchanges: Market Microstructure for Practitioners | Larry Harris | [quant](tracks/quant.md) |
-| [ ] | Introduction to C++ for Financial Engineers: An Object-Oriented Approach | Daniel J. Duffy | [quant](tracks/quant.md) |
-| [ ] | Computer Systems: A Programmer's Perspective (3rd ed.) | Randal Bryant, David O'Hallaron | [career](tracks/career.md) |
+| [~] | A Practical Guide to Quantitative Finance Interviews | Xinfeng Zhou | [quant research](tracks/quant-research.md) |
+| [~] | Designing Data-Intensive Applications (2nd ed.) | Martin Kleppmann, Chris Riccomini | [systems](tracks/systems.md) |
+| [ ] | An Introduction to Statistical Learning with Applications in Python | James, Witten, Hastie, Tibshirani, Taylor | [quant research](tracks/quant-research.md) |
+| [ ] | The Theory of Poker | David Sklansky | [quant research](tracks/quant-research.md) |
+
+### Tier 3: later
+
+| | Title | Author | Track |
+|---|---|---|---|
+| [ ] | Introduction to C++ for Financial Engineers: An Object-Oriented Approach | Daniel J. Duffy | [quant dev](tracks/quant-dev.md) |
+| [ ] | Computer Systems: A Programmer's Perspective (3rd ed.) | Randal Bryant, David O'Hallaron | [systems](tracks/systems.md) |
+| [ ] | Introduction to Mathematical Statistics (7th ed., 2012) | Robert V. Hogg, Joseph McKean, Allen T. Craig | [quant research](tracks/quant-research.md) |
+| [ ] | Python for Data Analysis (3rd ed.) | Wes McKinney | [quant research](tracks/quant-research.md) |
+| [ ] | Trading and Exchanges: Market Microstructure for Practitioners | Larry Harris | [quant research](tracks/quant-research.md) |
+| [ ] | Paul Wilmott on Quantitative Finance | Paul Wilmott | [quant research](tracks/quant-research.md) |
+| [ ] | Quant Job Interview Questions and Answers | Mark Joshi, Nick Denson, Andrew Downes | [quant research](tracks/quant-research.md) |
+| [ ] | Heard on the Street: Quantitative Questions from Wall Street Job Interviews | Timothy Falcon Crack | [quant research](tracks/quant-research.md) |
 
 ## Conventions
 
-- `- [ ]` not started, `- [~]` in progress, `- [x]` done.
-- Each item: **Title** by Author, tagged `(Tier N)`. One line on why it's on the list. Optional notes below it.
-- Within a track, items are ordered by the sequence they should be read in.
-- Keep the priority table above in sync when status changes.
+- `[ ]` not started, `[~]` in progress, `[x]` done.
+- Each item is tagged `(Tier N)` in its track file, with one line on why it is on the list and a status line once started.
+- Within a track, items are in the order they should be read.
