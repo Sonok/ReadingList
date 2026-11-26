@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Reading progress</title>
+<style>
+  :root {
+    --surface: #ffffff; --text: #1f1f1e; --text2: #5f5e58; --grid: #e6e5e0; --card: #ffffff; --shadow: rgba(0, 0, 0, .12);
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --surface: #171716; --text: #f1f0ec; --text2: #a3a299; --grid: #33322e; --card: #232321; --shadow: rgba(0, 0, 0, .5); }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--surface); color: var(--text);
+    font: 15px/1.45 "Helvetica Neue", Helvetica, Arial, system-ui, sans-serif;
+  }
+  main { max-width: 960px; margin: 0 auto; padding: 28px 16px 40px; }
+  h1 { font-size: 22px; margin: 0 0 2px; }
+  .sub { color: var(--text2); margin: 0 0 14px; }
+  .legend { display: flex; flex-wrap: wrap; gap: 6px 20px; margin: 0 0 6px; padding: 0; list-style: none; font-size: 14px; }
+  .legend li { display: flex; align-items: center; gap: 7px; }
+  .legend b { font-weight: 600; }
+  .sw { width: 10px; height: 10px; border-radius: 50%; flex: none; }
+  .wrap { position: relative; }
+  svg { display: block; width: 100%; height: auto; touch-action: pan-y; outline: none; }
+  svg text { font-family: inherit; fill: var(--text2); font-size: 12px; }
+  .tip {
+    position: absolute; pointer-events: none; min-width: 190px; max-width: 300px; padding: 10px 12px;
+    background: var(--card); border: 1px solid var(--grid); border-radius: 8px; box-shadow: 0 4px 16px var(--shadow);
+    font-size: 13px; opacity: 0; transition: opacity .08s;
+  }
+  .tip.on { opacity: 1; }
+  .tip .date { font-weight: 600; margin-bottom: 6px; }
+  .tip .row { display: flex; gap: 7px; align-items: baseline; margin-top: 5px; }
+  .tip .row .sw { position: relative; top: 1px; }
+  .tip .val { color: var(--text2); }
+  .tip .note { color: var(--text2); margin: 2px 0 0 17px; }
+  .hint { color: var(--text2); font-size: 13px; margin: 8px 0 0; }
+  a { color: inherit; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Reading progress</h1>
+  <p class="sub">Percent of each book complete. Hover or tap a date to see what was read that day.</p>
+  <ul class="legend" id="legend"></ul>
+  <div class="wrap">
+    <svg id="chart" viewBox="0 0 900 430" role="img" tabindex="0"
+         aria-label="Line chart of percent complete over time for each book in progress"></svg>
+    <div class="tip" id="tip" role="status"></div>
+  </div>
+  <p class="hint">Arrow keys step through logged days. The full list is in the
+    <a href="https://github.com/Sonok/ReadingList">ReadingList repository</a>.</p>
+</main>
+<script>
+const DATA = {"today": "2026-11-26", "books": [{"name": "K&amp;R", "color": "#2a78d6", "unit": "pages", "points": [{"d": "2026-09-29", "done": 13, "total": 238, "note": "Started, read to page 13."}, {"d": "2026-09-30", "done": 18, "total": 238, "note": "To page 18."}, {"d": "2026-10-06", "done": 28, "total": 238, "note": "To page 28."}, {"d": "2026-10-09", "done": 36, "total": 238, "note": "To page 36, finished chapter 1."}, {"d": "2026-10-11", "done": 48, "total": 238, "note": "To page 41 (through 2.6), then read 2.8 through 2.12 with 2.7 skipped."}, {"d": "2026-10-12", "done": 56, "total": 238, "note": "Backfilled 2.7, chapter 2 done, then to page 56."}, {"d": "2026-10-13", "done": 61, "total": 238, "note": "To page 61, chapter 3 done."}, {"d": "2026-10-16", "done": 66, "total": 238, "note": "To page 66, 4.2 done."}, {"d": "2026-10-17", "done": 71, "total": 238, "note": "To page 71, 4.3 done (reverse Polish calculator)."}, {"d": "2026-10-18", "done": 76, "total": 238, "note": "To page 76, 4.8 done."}, {"d": "2026-11-12", "done": 77, "total": 238, "note": "To page 77."}, {"d": "2026-11-13", "done": 82, "total": 238, "note": "To page 82, chapter 4 done (4.9 to 4.11: initialization, recursion, preprocessor)."}, {"d": "2026-11-14", "done": 85, "total": 238, "note": "To page 85, into chapter 5."}, {"d": "2026-11-15", "done": 88, "total": 238, "note": "To page 88."}, {"d": "2026-11-16", "done": 89, "total": 238, "note": "To page 89, 5.3 done."}, {"d": "2026-11-18", "done": 95, "total": 238, "note": "To page 92, 5.4 done (address arithmetic, alloc and afree), then to page 95, 5.5 done (strcpy, strcmp)."}, {"d": "2026-11-19", "done": 98, "total": 238, "note": "To page 98, 5.6 done (line sort with pointer arrays)."}, {"d": "2026-11-20", "done": 103, "total": 238, "note": "To page 103, 5.7 to 5.9 done (multi-dimensional arrays, pointer array initialization, pointers vs. multi-dimensional arrays) and into 5.10."}, {"d": "2026-11-23", "done": 105, "total": 238, "note": "To page 105, 5.10 done (command-line arguments, find with -x and -n flags)."}, {"d": "2026-11-24", "done": 108, "total": 238, "note": "To page 108, 5.11 done (pointers to functions)."}, {"d": "2026-11-25", "done": 115, "total": 238, "note": "To page 113, chapter 5 done; 5.12 read for the declaration-reading rule and const placement, then to page 115, 6.1 done (basics of structures)."}]}, {"name": "A Tour of C++", "color": "#eb6834", "unit": "pages", "points": [{"d": "2026-09-28", "done": 3, "total": 226, "note": "Pages 1 to 3."}, {"d": "2026-09-29", "done": 4, "total": 226, "note": "Page 4."}]}, {"name": "CP Handbook", "color": "#9a5bd9", "unit": "pages", "points": [{"d": "2026-09-28", "done": 24, "total": 279, "note": ""}, {"d": "2026-10-16", "done": 30, "total": 279, "note": "To page 30 of 279, reading from the start of the book."}]}, {"name": "DDIA", "color": "#eda100", "unit": "pages", "points": [{"d": "2026-10-04", "done": 33, "total": 600, "note": "To page 23, chapter 1 done."}, {"d": "2026-10-10", "done": 38, "total": 600, "note": "To page 38, into chapter 2."}]}, {"name": "Quant Primer", "color": "#d6336c", "unit": "items", "points": [{"d": "2026-10-17", "done": 0, "total": 58, "note": ""}, {"d": "2026-10-18", "done": 2, "total": 58, "note": "Questions 1 (two dice) and 4 (Python negative indexing) solved and checked. 2 of 58 items."}]}]};
+
+const NS = "http://www.w3.org/2000/svg";
+const W = 900, H = 430, M = { l: 46, r: 58, t: 14, b: 30 };
+const svg = document.getElementById("chart"), tip = document.getElementById("tip");
+const day = s => Date.UTC(+s.slice(0, 4), +s.slice(5, 7) - 1, +s.slice(8, 10)) / 864e5;
+const pct = p => 100 * p.done / p.total;
+const el = (tag, attrs, parent) => {
+  const e = document.createElementNS(NS, tag);
+  for (const k in attrs) e.setAttribute(k, attrs[k]);
+  (parent || svg).appendChild(e);
+  return e;
+};
+const books = DATA.books.filter(b => b.points.length);
+const today = day(DATA.today);
+const x0 = Math.min(...books.map(b => day(b.points[0].d))) - 1;
+const topPct = Math.max(...books.map(b => pct(b.points[b.points.length - 1])));
+const yMax = Math.min(100, (Math.floor(topPct / 10) + 2) * 10);
+const X = d => M.l + (d - x0) / (today - x0) * (W - M.l - M.r);
+const Y = v => H - M.b - v / yMax * (H - M.t - M.b);
+const fmtDate = d => new Date(d * 864e5).toLocaleDateString("en-US", { timeZone: "UTC", weekday: "short", month: "short", day: "numeric", year: "numeric" });
+
+// Legend row: every book with its current value.
+document.getElementById("legend").innerHTML = books.map(b => {
+  const p = b.points[b.points.length - 1];
+  return `<li><span class="sw" style="background:${b.color}"></span>${b.name} <b>${pct(p).toFixed(0)}%</b></li>`;
+}).join("");
+
+// Grid and axes.
+const step = yMax <= 60 ? 10 : 20;
+for (let v = 0; v <= yMax; v += step) {
+  el("line", { x1: M.l, x2: W - M.r, y1: Y(v), y2: Y(v), stroke: "var(--grid)", "stroke-width": 1 });
+  el("text", { x: M.l - 8, y: Y(v) + 4, "text-anchor": "end" }).textContent = v + "%";
+}
+for (let d = Math.ceil(x0); d <= today; d++) {
+  const dt = new Date(d * 864e5);
+  if (dt.getUTCDay() === 1 && Math.floor(d / 7) % 2 === 0)
+    el("text", { x: X(d), y: H - 8, "text-anchor": "middle" }).textContent =
+      dt.toLocaleDateString("en-US", { timeZone: "UTC", month: "short", day: "numeric" });
+}
+
+// Crosshair sits under the lines.
+const cross = el("line", { y1: M.t, y2: H - M.b, stroke: "var(--text2)", "stroke-width": 1, opacity: 0 });
+
+// Lines, a small dot on every logged day, and a larger dot at the current value.
+const dots = {};  // date string -> [{circle, book, point, prev}]
+for (const b of books) {
+  const pts = b.points.map(p => [X(day(p.d)), Y(pct(p))]);
+  const last = pts[pts.length - 1];
+  el("path", {
+    d: "M" + pts.concat([[X(today), last[1]]]).map(p => p[0].toFixed(1) + " " + p[1].toFixed(1)).join("L"),
+    fill: "none", stroke: b.color, "stroke-width": 2, "stroke-linejoin": "round", "stroke-linecap": "round",
+  });
+  b.points.forEach((p, i) => {
+    const c = el("circle", { cx: pts[i][0], cy: pts[i][1], r: 3, fill: b.color, stroke: "var(--surface)", "stroke-width": 1.5 });
+    (dots[p.d] = dots[p.d] || []).push({ c, b, p, prev: b.points[i - 1] });
+  });
+  el("circle", { cx: X(today), cy: last[1], r: 5, fill: b.color, stroke: "var(--surface)", "stroke-width": 2 });
+}
+const leader = books.reduce((a, b) => pct(a.points[a.points.length - 1]) >= pct(b.points[b.points.length - 1]) ? a : b);
+const lt = el("text", { x: X(today) + 10, y: Y(topPct) + 5, "font-weight": 600 });
+lt.textContent = topPct.toFixed(0) + "%";
+lt.style.fill = "var(--text)"; lt.style.fontSize = "14px";
+
+// Hover: snap to the nearest logged day, enlarge that day's points, and describe them.
+const days = Object.keys(dots).sort();
+let current = null;
+function show(d, clientX) {
+  if (current) dots[current].forEach(o => o.c.setAttribute("r", 3));
+  current = d;
+  if (!d) { cross.setAttribute("opacity", 0); tip.classList.remove("on"); return; }
+  const x = X(day(d));
+  cross.setAttribute("x1", x); cross.setAttribute("x2", x); cross.setAttribute("opacity", .45);
+  dots[d].forEach(o => o.c.setAttribute("r", 6));
+  tip.innerHTML = `<div class="date">${fmtDate(day(d))}</div>` + dots[d].map(({ b, p, prev }) => {
+    const gain = prev ? ` <span class="val">(+${p.done - prev.done})</span>` : "";
+    return `<div class="row"><span class="sw" style="background:${b.color}"></span><span><b>${b.name}</b> ` +
+      `<span class="val">${p.done} of ${p.total} ${b.unit}, ${pct(p).toFixed(0)}%</span>${gain}</span></div>` +
+      (p.note ? `<div class="note">${p.note}</div>` : "");
+  }).join("");
+  tip.classList.add("on");
+  const box = svg.getBoundingClientRect(), px = x / W * box.width;
+  const tw = tip.offsetWidth, left = px + 14 + tw > box.width ? px - 14 - tw : px + 14;
+  tip.style.left = Math.max(0, left) + "px";
+  tip.style.top = Math.max(0, Y(Math.max(...dots[d].map(o => pct(o.p)))) / H * box.height - tip.offsetHeight - 12) + "px";
+}
+function nearest(clientX) {
+  const box = svg.getBoundingClientRect();
+  const d = x0 + ((clientX - box.left) / box.width * W - M.l) / (W - M.l - M.r) * (today - x0);
+  return days.reduce((a, b) => Math.abs(day(a) - d) <= Math.abs(day(b) - d) ? a : b);
+}
+svg.addEventListener("pointermove", e => show(nearest(e.clientX)));
+svg.addEventListener("pointerdown", e => show(nearest(e.clientX)));
+svg.addEventListener("pointerleave", e => { if (e.pointerType === "mouse") show(null); });
+svg.addEventListener("blur", () => show(null));
+svg.addEventListener("keydown", e => {
+  if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+  e.preventDefault();
+  const i = current ? days.indexOf(current) : days.length;
+  show(days[Math.max(0, Math.min(days.length - 1, i + (e.key === "ArrowLeft" ? -1 : 1)))]);
+});
+// A date in the URL (index.html#2026-11-25) opens with that day selected.
+if (dots[location.hash.slice(1)]) show(location.hash.slice(1));
+</script>
+</body>
+</html>

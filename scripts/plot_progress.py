@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
-"""Render progress.png and the README progress table from progress.csv.
+"""Render progress.png, the interactive index.html, and the README progress table from progress.csv.
 
 progress.csv rows: date,book,done,total. Units per book are in BOOKS below (pages, items, or questions). The green book baseline (30 of 191 as of 2026-10-03) is an
 estimate from problems done in ch 2 and 4 plus ch 1 and 3.1; forward progress is logged by page.
 Run after appending a row:  python3 scripts/plot_progress.py
 """
 import csv
+import html
+import json
 import re
 from collections import defaultdict
 from datetime import date
@@ -18,6 +20,15 @@ import matplotlib.pyplot as plt
 
 ROOT = Path(__file__).resolve().parent.parent
 CSV, PNG, README = ROOT / "progress.csv", ROOT / "progress.png", ROOT / "README.md"
+LOG, PAGE, TEMPLATE = ROOT / "log.md", ROOT / "index.html", ROOT / "scripts" / "chart_template.html"
+# log.md section heading for each charted book, used to attach that day's note to its point on the interactive chart.
+LOG_HEADINGS = {
+    "The C Programming Language (K&R)": "K&R",
+    "A Tour of C++": "A Tour of C++",
+    "Competitive Programmer's Handbook": "CP Handbook",
+    "Designing Data-Intensive Applications": "DDIA",
+    "An Interview Primer for Quantitative Finance": "Quant Primer",
+}
 
 # Fixed categorical order and hue per book; never reassigned when a book is added or finished.
 # Hue #1baf7a belonged to a book since removed; leave it unused.
@@ -62,12 +73,8 @@ for name, color, _ in BOOKS:
     handles.append(dot)
     labels.append(f"{name}  {ys[-1]:.0f}%")
 
-# The leader gets a soft fill and a value label at its line end; the legend row carries every book's value.
+# The leader gets a value label at its line end; the legend row carries every book's value.
 leader = max(latest, key=latest.get)
-lcolor = next(c for n, c, _ in BOOKS if n == leader)
-lpts = series[leader]
-ax.fill_between([p[0] for p in lpts] + [today], [100 * p[1] / p[2] for p in lpts] + [latest[leader]],
-                color=lcolor, alpha=0.07, lw=0, zorder=1)
 top = latest[leader]
 ax.set_ylim(0, min(100, (int(top // 10) + 2) * 10))  # headroom above the leader; grows toward 100 as books finish
 x0, x1 = ax.get_xlim()  # matplotlib date numbers (float days)
@@ -93,6 +100,22 @@ fig.text(0.02, 0.875, "Percent of each book complete", fontsize=10, color=TEXT2,
 fig.legend(handles, labels, loc="center left", bbox_to_anchor=(0.008, 0.795), ncol=len(handles), frameon=False,
            fontsize=9.5, labelcolor=TEXT, handletextpad=0.2, columnspacing=1.6, borderaxespad=0, borderpad=0)
 fig.savefig(PNG, facecolor="white")
+
+# Interactive page: the same series plus each day's note from log.md, injected into the template.
+notes, book = defaultdict(dict), None
+for line in LOG.read_text().splitlines():
+    if line.startswith("## "):
+        book = LOG_HEADINGS.get(line[3:].strip())
+    elif book and (m := re.match(r"- (\d{4}-\d{2}-\d{2}): (.*)", line)):
+        notes[book][m.group(1)] = m.group(2)
+payload = {"today": today.isoformat(), "books": [
+    {"name": name, "color": color, "unit": unit, "points": [
+        {"d": d.isoformat(), "done": done, "total": total, "note": html.escape(notes[name].get(d.isoformat(), ""))}
+        for d, done, total in series.get(name, [])]}
+    for name, color, unit in BOOKS]}
+for b in payload["books"]:
+    b["name"] = html.escape(b["name"])
+PAGE.write_text(TEMPLATE.read_text().replace("/*DATA*/", json.dumps(payload).replace("</", "<\\/")))
 
 # README table between markers.
 rows = ["| Book | Progress | | Unit |", "|---|---|---|---|"]
