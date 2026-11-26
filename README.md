@@ -26,7 +26,17 @@ Data lives in [progress.csv](progress.csv) and dated entries in the [reading log
 | [Quant dev](tracks/quant-dev.md) | C++ applied to trading: order books, concurrency, pricing code | TraderMath problems |
 | [Quant trading / research](tracks/quant-research.md) | Probability, statistics, and markets | Quant Primer |
 | [Tech](tracks/tech.md) | Algorithms and data systems | CP Handbook, DDIA |
-| [HPC and ML inference](tracks/hpc.md) | Computer architecture, parallel and GPU programming, fast inference | Planned, after the systems track |
+| [HPC and ML inference](tracks/hpc.md) | Computer architecture, parallel and GPU programming, fast inference | CMSC411 (course) |
+
+## Coursework
+
+University of Maryland courses that go with the tracks.
+
+| Course | Title | Track |
+|---|---|---|
+| CMSC411 | Computer Systems Architecture | [HPC and ML inference](tracks/hpc.md) |
+| CMSC764 / AMSC764 | Advanced Numerical Optimization (graduate) | [quant research](tracks/quant-research.md) |
+| MATH611 | Combinatorics (graduate) | [quant research](tracks/quant-research.md) |
 
 ## Goal: five books by December 31, 2027
 

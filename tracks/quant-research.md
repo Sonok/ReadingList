@@ -40,4 +40,12 @@ Probability, statistics, and markets.
 - [ ] **Heard on the Street: Quantitative Questions from Wall Street Job Interviews** by Timothy Falcon Crack (Tier 3)
   Classic question bank. Overlaps with Zhou and Joshi, so skim for what is new.
 
+## Courses
+
+- **CMSC764 / AMSC764 Advanced Numerical Optimization** (University of Maryland, graduate)
+  Convex analysis, gradient and quasi-Newton methods, duality, proximal and Lagrangian methods (ADMM, PDHG), and
+  stochastic methods (SGD, MCMC), with implementations in Python. Applications in machine learning and model fitting.
+- **MATH611 Combinatorics** (University of Maryland, graduate)
+  Algebraic, enumerative, extremal, and probabilistic combinatorics, with an emphasis on proofs.
+
 Dated entries are in the [reading log](../log.md).
