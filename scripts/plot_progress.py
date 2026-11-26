@@ -43,10 +43,11 @@ for k, v in series.items():
     series[k] = sorted((d, done, total) for d, (done, total) in byday.items())
 
 today = date.today()
-ends = []  # (y, label, color) for end labels, placed after the axes are scaled
-fig, ax = plt.subplots(figsize=(9, 4.2), dpi=160)
+plt.rcParams["font.family"] = ["Helvetica Neue", "Helvetica", "Arial", "DejaVu Sans"]
+fig, ax = plt.subplots(figsize=(9, 4.6), dpi=200)
 fig.patch.set_facecolor("white")
 ax.set_facecolor("white")
+handles, labels, latest = [], [], {}
 for name, color, _ in BOOKS:
     pts = series.get(name)
     if not pts:
@@ -54,41 +55,43 @@ for name, color, _ in BOOKS:
     xs = [p[0] for p in pts] + [today]
     ys = [100 * p[1] / p[2] for p in pts]
     ys.append(ys[-1])  # carry the latest value to today
-    ax.plot(xs, ys, color=color, lw=2, solid_joinstyle="round", solid_capstyle="round", label=name)
-    ax.plot([p[0] for p in pts], ys[:-1], "o", color=color, ms=5, mec="white", mew=1.5)
-    ends.append((ys[-1], f"{name}  {ys[-1]:.0f}%", color))
+    latest[name] = ys[-1]
+    ax.plot(xs, ys, color=color, lw=2, solid_joinstyle="round", solid_capstyle="round", zorder=3)
+    # One marker per series, at its current value, ringed in the surface color so overlapping ends stay legible.
+    (dot,) = ax.plot([today], [ys[-1]], "o", color=color, ms=7.5, mec="white", mew=2, zorder=4, clip_on=False)
+    handles.append(dot)
+    labels.append(f"{name}  {ys[-1]:.0f}%")
 
-top = max(100 * p[-1][1] / p[-1][2] for p in series.values())
+# The leader gets a soft fill and a value label at its line end; the legend row carries every book's value.
+leader = max(latest, key=latest.get)
+lcolor = next(c for n, c, _ in BOOKS if n == leader)
+lpts = series[leader]
+ax.fill_between([p[0] for p in lpts] + [today], [100 * p[1] / p[2] for p in lpts] + [latest[leader]],
+                color=lcolor, alpha=0.07, lw=0, zorder=1)
+top = latest[leader]
 ax.set_ylim(0, min(100, (int(top // 10) + 2) * 10))  # headroom above the leader; grows toward 100 as books finish
-# End labels: sort by value, push apart to a minimum gap, and connect displaced ones to the line end with a leader.
-ymax = ax.get_ylim()[1]
-gap = ymax * 0.07
-ends.sort()
-placed = []
-for y, _, _ in ends:
-    placed.append(y if not placed else max(y, placed[-1] + gap))
 x0, x1 = ax.get_xlim()  # matplotlib date numbers (float days)
 xt = mdates.date2num(today)
-dx = (x1 - x0) * 0.045
-for (y, label, color), ly in zip(ends, placed):
-    if abs(ly - y) > 1e-9:
-        ax.plot([xt, xt + dx], [y, ly], color=color, lw=1, clip_on=False, solid_capstyle="round")
-    ax.text(xt + dx * 1.15, ly, label, va="center", fontsize=9, color=TEXT, clip_on=False)
-ax.set_xlim(x0, x1)
-ax.set_ylabel("% complete", color=TEXT2, fontsize=9)
+ax.set_xlim(x0, xt + (xt - x0) * 0.07)
+ax.annotate(f"{top:.0f}%", (xt, top), xytext=(9, 0), textcoords="offset points", va="center",
+            fontsize=11, fontweight="bold", color=TEXT, annotation_clip=False)
+
+ax.yaxis.set_major_locator(plt.MultipleLocator(10 if ax.get_ylim()[1] <= 60 else 20))
 ax.yaxis.set_major_formatter(lambda v, _: f"{v:.0f}%")
-ax.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=mdates.MO))
-ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %d"))
-ax.grid(axis="y", color=GRID, lw=1)
-for s in ("top", "right"):
+ax.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=mdates.MO, interval=2))
+ax.xaxis.set_major_formatter(mdates.DateFormatter("%b %-d"))
+ax.grid(axis="y", color=GRID, lw=0.8, zorder=0)
+ax.set_axisbelow(True)
+for s in ("top", "right", "left"):
     ax.spines[s].set_visible(False)
-for s in ("left", "bottom"):
-    ax.spines[s].set_color(GRID)
-ax.tick_params(colors=TEXT2, labelsize=8.5, length=0)
-ax.legend(loc="upper left", frameon=False, fontsize=8.5, labelcolor=TEXT)
-ax.set_title("Tier 1 and 2 books in progress", loc="left", fontsize=11, color=TEXT, pad=10)
-fig.tight_layout()
-fig.subplots_adjust(right=0.80)
+ax.spines["bottom"].set_color(GRID)
+ax.tick_params(colors=TEXT2, labelsize=9, length=0, pad=6)
+
+fig.subplots_adjust(left=0.065, right=0.965, top=0.74, bottom=0.09)
+fig.text(0.02, 0.94, "Reading progress", fontsize=14, fontweight="bold", color=TEXT, va="center")
+fig.text(0.02, 0.875, "Percent of each book complete", fontsize=10, color=TEXT2, va="center")
+fig.legend(handles, labels, loc="center left", bbox_to_anchor=(0.008, 0.795), ncol=len(handles), frameon=False,
+           fontsize=9.5, labelcolor=TEXT, handletextpad=0.2, columnspacing=1.6, borderaxespad=0, borderpad=0)
 fig.savefig(PNG, facecolor="white")
 
 # README table between markers.
